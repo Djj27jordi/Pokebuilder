@@ -1,0 +1,347 @@
+<!-- 
+    AIXÓ ÉS NOMÉS UN EXEMPLE DE CÓDIC HTML PER A LA PÀGINA D'INICI DEL PROJECTE FINAL.
+    NO ÉS UN CÓDIC FUNCIONAL, NOMÉS ÉS UN EXEMPLE DE CÓDIC HTML PER A LA PÀGINA D'INICI DEL PROJECTE FINAL.
+
+    S'HA DE FER UNA VERSIÓ AMB EL CSS SEPARAT.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: px;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            justify-content: center;
+            align-items: center;
+            /* overflow: hidden; */
+            overflow-x: hidden;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: red; */
+            width: 80%;
+        }
+
+        .fons{
+            height: 250px;
+            width: 150vw;
+            background-color: #e2e2e2;
+            box-shadow: inset 0px 15px 5px rgba(0,0,0,0.2), 0px 5px 10px rgba(0,0,0,0.2);
+            transform: rotate(-16deg); 
+            z-index: -1;
+            margin-bottom: 150px;
+            margin-top: 150px;
+        }
+
+
+        .triangleinici {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            width: 100vw;
+            height: 550px;
+            background: linear-gradient(to bottom, #444444 1%, #e2e2e2 90%);            
+            clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+            z-index: -1;
+        }
+
+        .trianglefinal {
+            bottom: 0;
+            right: 0;
+            width: 100vw;
+            height: 550px;
+            background: linear-gradient(to top, #444444 1%, #e2e2e2 90%);
+            clip-path: polygon(100% 100%, 03% 100%, 100% 0%);
+            z-index: -1;
+        }
+
+        header{
+            background-color: rgba(226, 226, 226, 0.85);
+            height: 100px; 
+            width: 100%;
+            box-shadow: 0px 4px 4px #00000025;
+        }
+
+        /* CAIXES DE CONTINGUT */
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 15px;
+            width: 75%;
+            padding: 2%;
+        }
+            
+        .highlight1 {
+            grid-row: span 3 / span 3;
+            background-color: rgba(158, 201, 245, 0.85);
+            border-radius: 30px;
+            padding: 15px;
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);;
+            transition: transform 0.5s ease-in-out, 
+                background-color 0.5s ease-in-out, 
+                box-shadow 0.5s ease-in-out;
+        }
+
+        .highlight1:hover {
+            background-color: rgba(158, 201, 245, 1);
+            transform: translateY(-15px);
+            box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
+            transition: background-color 0.5s ease-in-out, 
+                transform 0.5s ease-in-out, 
+                box-shadow 0.5s ease-in-out;
+        }
+
+        .highlight2 {
+            grid-row: span 3 / span 3;
+            background-color: rgba(158, 201, 245, 0.85);
+            border-radius: 30px;
+            padding: 15px;
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: transform 0.5s ease-in-out, 
+                background-color 0.5s ease-in-out, 
+                box-shadow 0.5s ease-in-out;
+
+        }
+
+        .highlight2:hover {
+            background-color: rgba(158, 201, 245, 1);
+            transform: translateY(-15px);
+            box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
+            transition: background-color 0.5s ease-in-out, 
+                transform 0.5s ease-in-out, 
+                box-shadow 0.5s ease-in-out;
+        }
+
+        .highlight3 {
+            grid-column: span 2 / span 2;
+            grid-row: span 2 / span 2;
+            grid-column-start: 1;
+            grid-row-start: 4;
+            background-color: rgba(158, 201, 245, 0.85);
+            border-radius: 30px;
+            padding: 15px;
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: transform 0.5s ease-in-out, 
+                background-color 0.5s ease-in-out, 
+                box-shadow 0.5s ease-in-out;
+        }
+
+        .highlight3:hover {
+            background-color: rgba(158, 201, 245, 1);
+            transform: translateY(-15px);
+            box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
+            transition: background-color 0.5s ease-in-out, 
+                transform 0.5s ease-in-out, 
+                box-shadow 0.5s ease-in-out;
+        }
+
+        .highlight4 {
+            grid-row: span 5 / span 5;
+            grid-column-start: 3;
+            grid-row-start: 1;
+            background-color: rgba(158, 201, 245, 0.85);
+            border-radius: 30px;
+            padding: 15px;
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: transform 0.5s ease-in-out, 
+                background-color 0.5s ease-in-out, 
+                box-shadow 0.5s ease-in-out;
+        }
+
+        .highlight4:hover {
+            background-color: rgba(158, 201, 245, 1);
+            transform: translateY(-15px);
+            box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
+            transition: background-color 0.5s ease-in-out, 
+                transform 0.5s ease-in-out, 
+                box-shadow 0.5s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <div class="triangleinici"></div>
+    <!-- <div class="fons"></div> -->
+    <div class="container" style="margin-top: 300px;">
+        <div class="highlights">
+            <div class="highlight1">
+                <h2 class="titolcaixa">titol caixa</h2>
+                <div class="posInici">
+                    <div class="usrPost">
+                        <div class="post_info">
+                            <img src="" alt="usr_img">
+                            <p>user.name</p>
+                        </div>
+                        <div class="equipPost">
+                            <h3 class="teamName">
+                                nomequip
+                            </h3>
+                            <div class="pokemons">
+                                <img src="" alt="pkmn1">
+                                <img src="" alt="pkmn2">
+                                <img src="" alt="pkmn3">
+                                <img src="" alt="pkmn4">
+                                <img src="" alt="pkmn5">
+                                <img src="" alt="pkmn6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight2">
+                <h2 class="titolcaixa">titol caixa</h2>
+                <div class="posInici">
+                    <div class="usrPost">
+                        <div class="post_info">
+                            <img src="" alt="usr_img">
+                            <p>user.name</p>
+                        </div>
+                        <div class="equipPost">
+                            <h3 class="teamName">
+                                nomequip
+                            </h3>
+                            <div class="pokemons">
+                                <img src="" alt="pkmn1">
+                                <img src="" alt="pkmn2">
+                                <img src="" alt="pkmn3">
+                                <img src="" alt="pkmn4">
+                                <img src="" alt="pkmn5">
+                                <img src="" alt="pkmn6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight3">
+                <h2 class="titolcaixa">titol caixa</h2>
+                <div class="posInici">
+                    <div class="usrPost">
+                        <div class="post_info">
+                            <img src="" alt="usr_img">
+                            <p>user.name</p>
+                        </div>
+                        <div class="equipPost">
+                            <h3 class="teamName">
+                                nomequip
+                            </h3>
+                            <div class="pokemons">
+                                <img src="" alt="pkmn1">
+                                <img src="" alt="pkmn2">
+                                <img src="" alt="pkmn3">
+                                <img src="" alt="pkmn4">
+                                <img src="" alt="pkmn5">
+                                <img src="" alt="pkmn6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight4">
+                <h2 class="titolcaixa">titol caixa</h2>
+                div.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fons"></div>
+    <div class="container">
+        <div class="highlights">
+            <div class="highlight1">
+                <h2 class="titolcaixa">titol caixa</h2>
+                <div class="posInici">
+                    <div class="usrPost">
+                        <div class="post_info">
+                            <img src="" alt="usr_img">
+                            <p>user.name</p>
+                        </div>
+                        <div class="equipPost">
+                            <h3 class="teamName">
+                                nomequip
+                            </h3>
+                            <div class="pokemons">
+                                <img src="" alt="pkmn1">
+                                <img src="" alt="pkmn2">
+                                <img src="" alt="pkmn3">
+                                <img src="" alt="pkmn4">
+                                <img src="" alt="pkmn5">
+                                <img src="" alt="pkmn6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight2">
+                <h2 class="titolcaixa">titol caixa</h2>
+                <div class="posInici">
+                    <div class="usrPost">
+                        <div class="post_info">
+                            <img src="" alt="usr_img">
+                            <p>user.name</p>
+                        </div>
+                        <div class="equipPost">
+                            <h3 class="teamName">
+                                nomequip
+                            </h3>
+                            <div class="pokemons">
+                                <img src="" alt="pkmn1">
+                                <img src="" alt="pkmn2">
+                                <img src="" alt="pkmn3">
+                                <img src="" alt="pkmn4">
+                                <img src="" alt="pkmn5">
+                                <img src="" alt="pkmn6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight3">
+                <h2 class="titolcaixa">titol caixa</h2>
+                <div class="posInici">
+                    <div class="usrPost">
+                        <div class="post_info">
+                            <img src="" alt="usr_img">
+                            <p>user.name</p>
+                        </div>
+                        <div class="equipPost">
+                            <h3 class="teamName">
+                                nomequip
+                            </h3>
+                            <div class="pokemons">
+                                <img src="" alt="pkmn1">
+                                <img src="" alt="pkmn2">
+                                <img src="" alt="pkmn3">
+                                <img src="" alt="pkmn4">
+                                <img src="" alt="pkmn5">
+                                <img src="" alt="pkmn6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight4">
+                <h2 class="titolcaixa">titol caixa</h2>
+                div.
+            </div>
+        </div>
+    </div>
+    
+    <div class="trianglefinal"></div>
+</body>
+</html>
