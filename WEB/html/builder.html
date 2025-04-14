@@ -8,34 +8,137 @@
 </head>
 <body>
   <nav>
-    <div>
-      <img src="logo.png" class="logoMenu" alt="logoMenu">
-      <div>
-        <ol>
-          <li>Pokedex</li>
-          <li><ol>
-            <li>Normal</li>
-            <li>Planta</li>
-            <li>Fuego</li>
-            <li>Agua</li>
-            <li>Lucha</li>
-            <li>Bicho</li>
-            <li>Veneno</li>
-            <li>Psiquico</li>
-            <li>Fantasma</li>
-            <li>Eléctico</li>
-            <li>Hielo</li>
-            <li>Dragon</li>
-            <li>Roca</li>
-            <li>Tierra</li>
-            <li>Volador</li>
-          </ol></li>
-          <li>Publicacions</li>
-          <li></li>
-        </ol>
+    <div class="logoMenu">
+      <img src="../../IMG/logo.png" class="logoMenu" alt="logoMenu">
+      <div class="menu" id="menu">
+        <ul class="llistaMenu">
+          <a href="index.html"></a><li>Inici</li></a>
+          <li class="dropdown"><a href="pokedex.html">Pokedex</a>
+            <ul class="menuDropdown">
+            <a href="pokedex.html"><li>Normal</li></a>
+            <a href="pokedex.html"><li>Planta</li></a>
+            <a href="pokedex.html"><li>Fuego</li></a>
+            <a href="pokedex.html"><li>Agua</li></a>
+            <a href="pokedex.html"><li>Lucha</li></a>
+            <a href="pokedex.html"><li>Bicho</li></a>
+            <a href="pokedex.html"><li>Veneno</li></a>
+            <a href="pokedex.html"><li>Psiquico</li></a>
+            <a href="pokedex.html"><li>Fantasma</li></a>
+            <a href="pokedex.html"><li>Eléctico</li></a>
+            <a href="pokedex.html"><li>Hielo</li></a>
+            <a href="pokedex.html"><li>Dragon</li></a>
+            <a href="pokedex.html"><li>Roca</li></a>
+            <a href="pokedex.html"><li>Tierra</li></a>
+            <a href="pokedex.html"><li>Volador</li></a>
+          </ul></li>
+          <a href="builder.html"><li>Builder</li></a>
+          <a href="posts.html"><li>Publicacions</li></a>
+          <a href="preguntesfrq.html"><li>Preguntes frequents</li></a>
+          <a href="nosaltres.html"><li>Qui som?</li></a>
+        </ul>
       </div>
     </div>
-
+    <div class="perfil" id="perfil">
+      <p>Kento27</p>
+      <img src="../../IMG/user.png" class="fotoUser" alt="foto del usuari">
+    </div>
   </nav>
+
+  <header>
+    <div class="selPokemon">
+      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon1" alt="">
+      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon2" alt="">
+      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon3" alt="">
+      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon4" alt="">
+      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon5" alt="">
+      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon6" alt="">
+    </div>
+  </header>
+  <section>
+    <div>
+      <div>
+        <div>
+          <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" alt="">
+        </div>
+      </div>
+      <div>
+        <div>
+          <table></table>
+        </div>
+      </div>
+      <div>
+        <h2>IV i EV</h2>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>EV</th>
+              <th>IV</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PS:</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Atac:</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Defensa:</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>At.Especial:</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Def.Especial:</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+            <tr>
+              <td>Velocitat:</td>
+              <td><input type="number"></td>
+              <td><input type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="genere">
+          <h2>Genere</h2>
+          <div class="genereHome">
+            <input type="radio" name="home" class="signeHome" id="signeHome">
+            <label for="home"><i class='bx bx-md bx-male-sign'></i></label>
+          </div>
+          <div class="genereDona">
+            <input type="radio" name="dona" class="signeDona" id="signeDona">
+            <label for="dona"><i class='bx bx-md bx-female-sign'></i></label>
+          </div>
+        </div>
+        <div>
+          <h2>Moviments</h2>
+          <select name="move1" id="move1" class="move1" required>
+            <option value="" selected disabled>Moviment 1</option>
+          </select>
+          <select name="move2" id="move2" class="move2" required>
+            <option value="" selected disabled>Moviment 2</option>
+          </select>
+          <select name="move3" id="move3" class="move3" required>
+            <option value="" selected disabled>Moviment 3</option>
+          </select>
+          <select name="move4" id="move4" class="move4" required>
+            <option value="" selected disabled>Moviment 4</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
