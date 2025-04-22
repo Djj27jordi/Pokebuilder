@@ -139,7 +139,4 @@ section{
   width: 150px; 
   border-radius: 15px; 
   box-shadow: 2px 4px 4px #00000040; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center
 }
