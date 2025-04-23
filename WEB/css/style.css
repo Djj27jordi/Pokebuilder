@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 80%;
+    margin-top: 300px;
+}
+
+.fons{
+    height: 250px;
+    width: 150vw;
+    background-color: #e2e2e2;
+    box-shadow: inset 0px 15px 5px rgba(0,0,0,0.25), 0px 5px 10px rgba(0,0,0,0.25);
+    transform: rotate(-16deg); 
+    z-index: -1;
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+
+.triangleinici {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100vw;
+    height: 550px;
+    background: linear-gradient(to bottom, #444444 1%, #e2e2e2 100%);            
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    z-index: -1;
+}
+
+.trianglefinal {
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 550px;
+    background: linear-gradient(to top, #444444 1%, #e2e2e2 90%);
+    clip-path: polygon(100% 100%, 03% 100%, 100% 0%);
+    z-index: -1;
+}
+
+header{
+    background-color: rgba(226, 226, 226, 0.85);
+    height: 100px; 
+    width: 100%;
+    box-shadow: 0px 4px 4px #00000025;
+}
+
+/* CAIXES DE CONTINGUT */
+
+
+    /* HIGHLIGHTS */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 75%;
+    padding: 2%;
+}
+    
+.highlight1 {
+    grid-row: span 3 / span 3;
+    background-color: rgba(158, 201, 245, 0.85);
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);;
+    transition: transform 0.5s ease-in-out, 
+        background-color 0.5s ease-in-out, 
+        box-shadow 0.5s ease-in-out;
+}
+
+.highlight1:hover {
+    background-color: rgba(158, 201, 245, 1);
+    transform: translateY(-15px);
+    box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.5s ease-in-out, 
+        transform 0.5s ease-in-out, 
+        box-shadow 0.5s ease-in-out;
+}
+
+.highlight2 {
+    grid-row: span 3 / span 3;
+    background-color: rgba(158, 201, 245, 0.85);
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease-in-out, 
+        background-color 0.5s ease-in-out, 
+        box-shadow 0.5s ease-in-out;
+
+}
+
+.highlight2:hover {
+    background-color: rgba(158, 201, 245, 1);
+    transform: translateY(-15px);
+    box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.5s ease-in-out, 
+        transform 0.5s ease-in-out, 
+        box-shadow 0.5s ease-in-out;
+}
+
+.highlight3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    background-color: rgba(158, 201, 245, 0.85);
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease-in-out, 
+        background-color 0.5s ease-in-out, 
+        box-shadow 0.5s ease-in-out;
+}
+
+.highlight3:hover {
+    background-color: rgba(158, 201, 245, 1);
+    transform: translateY(-15px);
+    box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.5s ease-in-out, 
+        transform 0.5s ease-in-out, 
+        box-shadow 0.5s ease-in-out;
+}
+
+.highlight4 {
+    grid-row: span 5 / span 5;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    background-color: rgba(158, 201, 245, 0.85);
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease-in-out, 
+        background-color 0.5s ease-in-out, 
+        box-shadow 0.5s ease-in-out;
+}
+
+.highlight4:hover {
+    background-color: rgba(158, 201, 245, 1);
+    transform: translateY(-15px);
+    box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.5s ease-in-out, 
+        transform 0.5s ease-in-out, 
+        box-shadow 0.5s ease-in-out;
+}
+
+/* ------------------------------------------------------ */
+.usrPost{
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    justify-content: start;
+}
+
+.post_info{
+    display: flex; 
+    flex-direction: row; 
+    gap: 5px; 
+    justify-content: start; 
+    align-items: center; 
+    height: 70px;
+}
+
+.usuaripost{
+    width: 50%; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 5px;
+}
+
+.usuaripost a{
+    background-color: #ffffffd9; 
+    overflow: hidden; 
+    height: 60px; 
+    width: 60px; 
+    border-radius: 500px; 
+    box-shadow: 2px 4px 4px #00000040; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.usuaripost img{
+    height: 65px;
+}
+
+.usuaripost h4{
+    font-size: 1.1rem
+}
+
+.likespost{
+    width: 50%; 
+    display: flex; 
+    font-display: row; 
+    justify-content: end; 
+    align-items: center; 
+    gap: 5px;
+}
+
+.likepost i{
+    font-size: 2rem; 
+    color: black;
+}
+
+
+.fila1, .fila2{
+    display: flex; 
+    flex-direction: row; 
+    gap: 5px;
+}
+
+.fila1 a, .fila2 a{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #ffffffd9; 
+    overflow: hidden; 
+    height: 85px;
+    width: 85px; 
+    border-radius: 15px; 
+    box-shadow: 2px 4px 4px #00000040; 
+}
+
+.fila1 img, .fila2 img{
+    height: 100px;
+}
+
+.pokemons{
+    padding: 25px;
+    padding-top: 10px; 
+    border-radius: 30px;  
+    display: flex; 
+    flex-direction: column; 
+    gap: 5px; 
+    align-items: center; 
+    background-color: #444444e9; 
+    box-shadow: 0px 0px 3px #444444d9; 
+    border: 3px solid #ffffff;
+}
+
+.pokemons p{
+    color: white; 
+    align-self: flex-start; 
+    font-weight: bold; 
+    font-size: 1.15rem;
+}
+
+
+/* --------------------------------------- */
+.posts{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.post1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+}
+
