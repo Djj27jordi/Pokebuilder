@@ -1,0 +1,217 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Fons amb imatge */
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../IMG/eevee-night-pokemon-4k-wallpaper-uhdpaper.com-99@2@a.jpg') no-repeat center center;
+    background-size: cover;
+    transform: scaleX(-1);
+    z-index: 0;
+  }
+  
+  /* Capa vermella en diagonal */
+  .overlay-red {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-right: 12%;
+    background-color: rgba(var(--normal-rgb), 0.85);
+    animation: rotacioColors 60s infinite linear;
+  }
+  
+  /* Header */
+  header {
+    position: relative;
+    z-index: 2;
+    /* height: 5%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 5%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 1.2rem; */
+  }
+
+  nav{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(var(--normal-rgb), 0.85); 
+    box-shadow: 0 2px 8px #444;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+  }
+  
+  .logoMenu{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 40px;
+  }
+  
+  /* MENU */
+  .llistaMenu{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+  }
+  
+  .menuDropdown{
+    list-style: none;
+    padding-left: 0px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0;
+    z-index: 1;
+  
+    /* poso que cada 8 files en la columna es posi lo demes en unaltre columna */
+    grid-template-columns: repeat(2, max-content);
+    gap: 0.5rem 2rem;
+  }
+  
+  li{
+    padding: 10px 15px 10px 15px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Mostrar el submenú en passar el ratolí */
+  .dropdown:hover .menuDropdown {
+    display: grid;
+  }
+  
+  /* perfil */
+  .perfil{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 15px 8px 15px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px #444;
+    gap: 10px;
+  }
+  
+  .perfil img {
+    height: 50px;
+  }
+
+  /* Login */
+  main {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: calc(100% - 60px);
+    padding: 40px;
+  }
+  
+  .login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-box label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.15em;
+  }
+  
+  .login-box input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+  }
+  
+  .login-box button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #87b9f9;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .login-box button:hover {
+    background-color: #6eaaf5;
+  }
+  
+
+
+
+  @keyframes rotacioColors {
+    0%   { background-color: rgba(var(--normal-rgb), 0.85); }
+    7%   { background-color: rgba(var(--planta-rgb), 0.85); }
+    14%  { background-color: rgba(var(--fuego-rgb), 0.85); }
+    21%  { background-color: rgba(var(--agua-rgb), 0.85); }
+    28%  { background-color: rgba(var(--lucha-rgb), 0.85); }
+    35%  { background-color: rgba(var(--bicho-rgb), 0.85); }
+    42%  { background-color: rgba(var(--veneno-rgb), 0.85); }
+    49%  { background-color: rgba(var(--psiquico-rgb), 0.85); }
+    56%  { background-color: rgba(var(--fantasma-rgb), 0.85); }
+    63%  { background-color: rgba(var(--electrico-rgb), 0.85); }
+    70%  { background-color: rgba(var(--hielo-rgb), 0.85); }
+    77%  { background-color: rgba(var(--dragon-rgb), 0.85); }
+    84%  { background-color: rgba(var(--roca-rgb), 0.85); }
+    91%  { background-color: rgba(var(--tierra-rgb), 0.85); }
+    100% { background-color: rgba(var(--volador-rgb), 0.85); }
+  }
+  
