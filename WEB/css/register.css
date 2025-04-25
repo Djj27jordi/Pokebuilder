@@ -127,6 +127,7 @@
     border-radius: 15px;
     box-shadow: 1px 2px 3px #444;
     gap: 10px;
+    height: 50px;
   }
   
   .perfil img {
@@ -151,7 +152,7 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     width: 100%;
     max-width: 500px;
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
