@@ -110,25 +110,11 @@ a{
 
 /* body builder */
 
-header{
+.pokemonsSel{
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-section{
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.selPokemon{
-  display: flex;
-  justify-content: center;
-  gap: 20px;
 }
 
 .equipPokemon{
@@ -139,4 +125,215 @@ section{
   width: 150px; 
   border-radius: 15px; 
   box-shadow: 2px 4px 4px #00000040; 
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectGuardar{
+  margin-bottom: 150px;
+}
+
+.guardarEquip{
+  padding: 35px 100px 35px 100px;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 3px solid black;
+  background-color: white;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.dadesPokemon{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.fons1{
+  background-color: var(--agua);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fons2{
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.fons2Stats{
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.pokemonSel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+}
+
+.centSelPkmn, .centStatsPkmn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+th, td{
+  height: 40px;
+  padding: 0px 10px 0px 10px;
+}
+
+.nomStat{
+  text-align: right;
+}
+
+#barraBasePS, #barraBaseAtac, #barraBaseDefensa, #barraBaseAtEspecial, #barraBaseDefEspecial, #barraBaseVelocitat{
+  height: 20px;
+  width: 200px;
+  background-color: var(--normal);
+  border-radius: 5px;
+  position:relative;
+}
+
+#barraStatPS, #barraStatAtac, #barraStatDefensa, #barraStatAtEspecial, #barraStatDefEspecial, #barraStatVelocitat{
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 30px;
+  border-radius: 5px;
+  background-color: var(--veneno);
+}
+
+h2{
+  padding-left: 20px;
+}
+
+.IvPS, .EvPS, .IvAtac, .EvAtac, .IvDefensa, .EvDefensa, .IvAtEspecial, .EvAtEspecial, .IvDefEspecial, .EvDefEspecial, .IvVelocitat, .EvVelocitat{
+  height: 25px;
+  width: 110px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.centreGenere{
+  display: flex;
+  gap: 20px;
+  padding-left: 30px;
+}
+
+.genereHome, .genereDona{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selMove{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, select {
+  text-align: center;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 1em;
+}
+
+.move1, .move2, .move3, .move4{
+  border-radius: 5px;
+  width: 350px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.sectDesc{
+  margin-top: 100px;
+  margin-bottom: 250px;
+}
+
+.sectDesc h2{
+  padding-left: 0px;
+}
+
+.estrategia{
+  width: 833px;
+  height: 75px;
+}
+
+footer{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuFooter{
+  border-right: 2px solid white;
+  padding-right: 2%;
+}
+
+.menuFooter h3{
+  color: white;
+  margin-bottom: 25px;
+}
+
+.menuFooter ul{
+  list-style: none;
+  padding: 0px;
+}
+
+.menuFooter li{
+  color: white;
+  padding: 7px 10px 7px 10px;
+}
+
+.menuFooter a{
+  text-decoration: none;
+}
+
+.contacteFooter{
+  border-left: 2px solid white;
+  padding-left: 2%;
+}
+
+.contacteFooter h3{
+  color: white;
+}
+
+.divContacte{
+  height: 200px;
+  width: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.contacte{
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.contacte img{
+  width: 50px;
 }
