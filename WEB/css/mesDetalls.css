@@ -110,6 +110,41 @@ a{
 
 /* body builder */
 
+.sectDesc{
+  margin-top: 100px;
+}
+
+.sectDesc h2{
+  padding-left: 0px;
+}
+
+.descripcioEquip{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.detallEquipDe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.detallEquipDe img{
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px black;
+  border-radius: 100%;
+}
+
+.estrategia{
+  width: 833px;
+  height: 75px;
+  border-radius: 5px;
+}
+
 .pokemonsSel{
   height: 400px;
   display: flex;
@@ -156,7 +191,7 @@ section{
 }
 
 .fons1{
-  background-color: var(--agua);
+  background-color: var(--electrico);
   border-radius: 15px;
   padding: 20px;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
@@ -264,28 +299,8 @@ input, select {
   border: 1px solid black;
 }
 
-.sectDesc{
-  margin-top: 100px;
-  margin-bottom: 250px;
-}
-
-.sectDesc h2{
-  padding-left: 0px;
-}
-
-.detallEquipDe{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.estrategia{
-  width: 833px;
-  height: 75px;
-  border-radius: 5px;
-}
-
 footer{
+  margin-top: 150px;
   background-color: black;
   display: flex;
   justify-content: space-around;

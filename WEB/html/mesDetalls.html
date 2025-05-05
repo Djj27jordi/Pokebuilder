@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="../css/builder.css">
+  <link rel="stylesheet" href="../css/mesDetalls.css">
   <title>PokeBuilder - Crear Equip</title>
 </head>
 <body>
@@ -44,6 +44,22 @@
       <img src="../../IMG/user.png" class="fotoUser" alt="foto del usuari">
     </div>
   </nav>
+  
+  <section class="sectDesc">
+    <div class="fons1 divDescripcio">
+      <div class="descripcioEquip">
+        <div>
+          <h2>Descripció Equip</h2>
+          <p>Explica la principal estrategia pensada per aquest equip</p>
+        </div>
+        <div class="detallEquipDe">
+          <img src="https://img.pokemondb.net/sprites/black-white/normal/primeape.png" alt="Primeape">
+          <p>Kento27</p>
+        </div>
+      </div>
+      <textarea name="estrategia" id="estrategia" class="estrategia" placeholder="" disabled></textarea>
+    </div>
+  </section>
 
   <section class="pokemonsSel">
     <div class="seleccioPokemon">
@@ -54,10 +70,6 @@
       <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon5" alt="">
       <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon6" alt="">
     </div>
-  </section>
-  
-  <section class="sectGuardar">
-    <button id="guardarEquip" class="guardarEquip">GUARDAR EQUIP</button>
   </section>
 
   <section>
@@ -123,33 +135,33 @@
           <tbody>
             <tr>
               <td class="nomStat">PS: </td>
-              <td><input type="number" id="IvPS" class="IvPS" max="31"></td>
-              <td><input type="number" id="EvPS" class="EvPS" max="252"></td>
+              <td><input type="number" id="IvPS" class="IvPS" max="31" disabled></td>
+              <td><input type="number" id="EvPS" class="EvPS" max="252" disabled></td>
             </tr>
             <tr>
               <td class="nomStat">Atac: </td>
-              <td><input type="number" id="IvAtac" class="IvAtac" max="31"></td>
-              <td><input type="number" id="EvAtac" class="EvAtac" max="252"></td>
+              <td><input type="number" id="IvAtac" class="IvAtac" max="31" disabled></td>
+              <td><input type="number" id="EvAtac" class="EvAtac" max="252" disabled></td>
             </tr>
             <tr>
               <td class="nomStat">Defensa: </td>
-              <td><input type="number" id="IvDefensa" class="IvDefensa" max="31"></td>
-              <td><input type="number" id="EvDefensa" class="EvDefensa" max="252"></td>
+              <td><input type="number" id="IvDefensa" class="IvDefensa" max="31" disabled></td>
+              <td><input type="number" id="EvDefensa" class="EvDefensa" max="252" disabled></td>
             </tr>
             <tr>
               <td class="nomStat">At.Especial: </td>
-              <td><input type="number" id="IvAtEspecial" class="IvAtEspecial" max="31"></td>
-              <td><input type="number" id="EvAtEspecial" class="EvAtEspecial" max="252"></td>
+              <td><input type="number" id="IvAtEspecial" class="IvAtEspecial" max="31" disabled></td>
+              <td><input type="number" id="EvAtEspecial" class="EvAtEspecial" max="252" disabled></td>
             </tr>
             <tr>
               <td class="nomStat">Def.Especial: </td>
-              <td><input type="number" id="IvDefEspecial" class="IvDefEspecial" max="31"></td>
-              <td><input type="number" id="EvDefEspecial" class="EvDefEspecial" max="252"></td>
+              <td><input type="number" id="IvDefEspecial" class="IvDefEspecial" max="31" disabled></td>
+              <td><input type="number" id="EvDefEspecial" class="EvDefEspecial" max="252" disabled></td>
             </tr>
             <tr>
               <td class="nomStat">Velocitat: </td>
-              <td><input type="number" id="IvVelocitat" class="IvVelocitat" max="31"></td>
-              <td><input type="number" id="EvVelocitat" class="EvVelocitat" max="252"></td>
+              <td><input type="number" id="IvVelocitat" class="IvVelocitat" max="31" disabled></td>
+              <td><input type="number" id="EvVelocitat" class="EvVelocitat" max="252" disabled></td>
             </tr>
           </tbody>
         </table>
@@ -159,11 +171,11 @@
           <h2>Genere</h2>
           <div class="centreGenere">
             <div class="genereHome">
-              <input type="radio" name="homeDona" class="signeHome" id="signeHome" value="home">
+              <input type="radio" name="homeDona" class="signeHome" id="signeHome" value="home" disabled>
               <label for="home"><i class='bx bx-md bx-male-sign'></i></label>
             </div>
             <div class="genereDona">
-              <input type="radio" name="homeDona" class="signeDona" id="signeDona" value="dona">
+              <input type="radio" name="homeDona" class="signeDona" id="signeDona" value="dona" disabled>
               <label for="dona"><i class='bx bx-md bx-female-sign'></i></label>
             </div>
           </div>
@@ -171,29 +183,21 @@
         <div>
           <h2>Moviments</h2>
           <div class="selMove">
-            <select name="move1" id="move1" class="move1" required>
+            <select name="move1" id="move1" class="move1" required disabled>
               <option value="" selected disabled>Moviment 1</option>
             </select>
-            <select name="move2" id="move2" class="move2" required>
+            <select name="move2" id="move2" class="move2" required disabled>
               <option value="" selected disabled>Moviment 2</option>
             </select>
-            <select name="move3" id="move3" class="move3" required>
+            <select name="move3" id="move3" class="move3" required disabled>
               <option value="" selected disabled>Moviment 3</option>
             </select>
-            <select name="move4" id="move4" class="move4" required>
+            <select name="move4" id="move4" class="move4" required disabled>
               <option value="" selected disabled>Moviment 4</option>
             </select>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="sectDesc">
-    <div class="fons1 divDescripcio">
-      <h2>Descripció Equip</h2>
-      <p>Explica la principal estrategia pensada per aquest equip</p>
-      <textarea name="estrategia" id="estrategia" class="estrategia" placeholder="Quina és la teva estrategia?"></textarea>
     </div>
   </section>
 
