@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../css/pokedexDetall.css">
+  <title>Pokedex - Charmander</title>
+</head>
+<body>
+  <nav>
+    <div class="logoMenu">
+      <img src="../../IMG/logo.png" class="logoMenu" alt="logoMenu">
+      <div class="menu" id="menu">
+        <ul class="llistaMenu">
+          <a href="index.html"></a><li>Inici</li></a>
+          <li class="dropdown"><a href="pokedex.html">Pokedex</a>
+            <ul class="menuDropdown">
+            <a href="pokedex.html"><li>Normal</li></a>
+            <a href="pokedex.html"><li>Planta</li></a>
+            <a href="pokedex.html"><li>Fuego</li></a>
+            <a href="pokedex.html"><li>Agua</li></a>
+            <a href="pokedex.html"><li>Lucha</li></a>
+            <a href="pokedex.html"><li>Bicho</li></a>
+            <a href="pokedex.html"><li>Veneno</li></a>
+            <a href="pokedex.html"><li>Psiquico</li></a>
+            <a href="pokedex.html"><li>Fantasma</li></a>
+            <a href="pokedex.html"><li>Eléctico</li></a>
+            <a href="pokedex.html"><li>Hielo</li></a>
+            <a href="pokedex.html"><li>Dragon</li></a>
+            <a href="pokedex.html"><li>Roca</li></a>
+            <a href="pokedex.html"><li>Tierra</li></a>
+            <a href="pokedex.html"><li>Volador</li></a>
+          </ul></li>
+          <a href="builder.html"><li>Builder</li></a>
+          <a href="posts.html"><li>Publicacions</li></a>
+          <a href="preguntesfrq.html"><li>Preguntes frequents</li></a>
+          <a href="nosaltres.html"><li>Qui som?</li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="perfil" id="perfil">
+      <p>Kento27</p>
+      <img src="../../IMG/user.png" class="fotoUser" alt="foto del usuari">
+    </div>
+  </nav>
+
+  <header>
+    <div class="divBuscador">
+      <input type="text" placeholder="Cerca..." class="buscador">
+      <i class='bx bx-search-alt-2 lupa'></i>
+    </div>
+  </header>
+
+  <section>
+    <div class="divAnteriorSeguent">
+      <div class="pokedexAnterior"><p>#005 Charmeleon</p></div>
+      <div class="pokedexSeguent"><p>#007 Squirtle</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="base">
+      <div>
+        <div>
+          <div>
+            <img src="" alt="">
+          </div>
+        </div>
+        <div>
+          <p>Tipo: </p>
+          <div class="tipos">
+            <div class="filtro" id="filtroFuego"><p>Fuego</p></div>
+            <div class="filtro" id="filtroVolador"><p>Volador</p></div>
+          </div>
+          <div class="genereShiny">
+            <div>
+              <div class="genereHome">
+                <input type="radio" name="homeDona" class="signeHome" id="signeHome" value="home">
+                <label for="home"><i class='bx bx-md bx-male-sign'></i></label>
+              </div>
+              <div class="genereDona">
+                <input type="radio" name="homeDona" class="signeDona" id="signeDona" value="dona">
+                <label for="dona"><i class='bx bx-md bx-female-sign'></i></label>
+              </div>
+            </div>
+            <div class="shiny">
+              <input type="checkbox" id="booleanShiny" class="booleanShiny" name="booleanShiny">
+              <p>Shiny</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="fons2Stats centStatsPkmn">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="nomStat">PS: </td>
+                  <td>60</td>
+                  <td><div id="barraBasePS"><div id="barraStatPS"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">Atac: </td>
+                  <td>55</td>
+                  <td><div id="barraBaseAtac"><div id="barraStatAtac"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">Defensa: </td>
+                  <td>25</td>
+                  <td><div id="barraBaseDefensa"><div id="barraStatDefensa"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">At.Especial: </td>
+                  <td>155</td>
+                  <td><div id="barraBaseAtEspecial"><div id="barraStatAtEspecial"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">Def.Especial: </td>
+                  <td>45</td>
+                  <td><div id="barraBaseDefEspecial"><div id="barraStatDefEspecial"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">Velocitat: </td>
+                  <td>115</td>
+                  <td><div id="barraBaseVelocitat"><div id="barraStatVelocitat"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">Total: </td>
+                  <td>445</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="menuFooter">
+      <h3>Menu Ràpid</h3>
+      <ul>
+        <a href="index.html"></a><li>Inici</li></a>
+        <a href="pokedex.html"></a><li>Pokedex</li></a>
+        <a href="builder.html"><li>Builder</li></a>
+        <a href="posts.html"><li>Publicacions</li></a>
+        <a href="preguntesfrq.html"><li>Preguntes frequents</li></a>
+        <a href="nosaltres.html"><li>Qui som?</li></a>
+      </ul>
+    </div>
+    <div class="formulariFoter">
+      <img src="" alt="" class="logoFooter">
+      <h3>Formulari de contacte</h3>
+      <div>
+        <label for="emailFooter">Email: </label>
+        <input type="email" name="emailFooter" id="emailFooter">
+      </div>
+      <div>
+        <label for="msgFooter">Missatge de contacte</label>
+        <textarea name="msgFooter" id="msgFooter" placeholder="Diguen's coses a millorar o si tens algun problema"></textarea>
+      </div>
+    </div>
+    <div class="contacteFooter">
+      <h3>Contacten's</h3>
+      <div class="divContacte">
+        <div class="contacte"><a href="#"><img src="../../IMG/contacte/insta.png" alt=""></a></div>
+        <div class="contacte"><a href="#"><img src="../../IMG/contacte/tiktok.png" alt=""></a></div>
+        <div class="contacte"><a href="#"><img src="../../IMG/contacte/discord.png" alt=""></a></div>
+        <div class="contacte"><a href="#"><img src="../../IMG/contacte/x.png" alt=""></a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
