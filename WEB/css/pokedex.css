@@ -110,7 +110,6 @@ a{
 }
 
 /* body */
-/* Contenidor del buscador */
 .divBuscador {
   display: flex;
   align-items: center;
@@ -120,7 +119,6 @@ a{
   margin-top: 50px;
 }
 
-/* Input del buscador */
 .buscador {
   width: 600px;
   padding: 15px 50px 15px 20px;
@@ -132,7 +130,6 @@ a{
   outline: none;
 }
 
-/* Icona de lupa */
 .lupa {
   position: absolute;
   right: calc(50% - 300px + 20px);

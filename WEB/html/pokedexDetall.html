@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="../css/pokedexDetall.css">
-  <title>Pokedex - Charmander</title>
+  <title>Pokedex - Charizard</title>
 </head>
 <body>
   <nav>
@@ -61,20 +61,18 @@
 
   <section>
     <div class="base">
-      <div>
-        <div>
-          <div>
-            <img src="" alt="">
-          </div>
+      <div class="estructPrincipal">
+        <div class="fonsImg">
+          <img src="https://img.pokemondb.net/sprites/black-white/normal/charizard.png" alt="Charizard">
         </div>
-        <div>
+        <div class="tiposGenere">
           <p>Tipo: </p>
           <div class="tipos">
-            <div class="filtro" id="filtroFuego"><p>Fuego</p></div>
-            <div class="filtro" id="filtroVolador"><p>Volador</p></div>
+            <div class="recuadreTipo" id="recuadreFuego"><p>Fuego</p></div>
+            <div class="recuadreTipo" id="recuadreVolador"><p>Volador</p></div>
           </div>
           <div class="genereShiny">
-            <div>
+            <div class="centreGenere">
               <div class="genereHome">
                 <input type="radio" name="homeDona" class="signeHome" id="signeHome" value="home">
                 <label for="home"><i class='bx bx-md bx-male-sign'></i></label>
@@ -91,7 +89,7 @@
           </div>
         </div>
         <div>
-          <div class="fons2Stats centStatsPkmn">
+          <div class="fonsStats centStatsPkmn">
             <table>
               <tbody>
                 <tr>
@@ -131,6 +129,66 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+      </div>
+      <div class="estructSecundari">
+        <div class="atrPkmn">
+          <h2>Charizard</h2>
+          <h3>Num. 006</h3>
+          <div class="divAtributs">
+            <div>
+              <p>Pes: </p>
+              <p>90,5 KG</p>
+            </div>
+            <div>
+              <p>Altura: </p>
+              <p>1,7 M</p>
+            </div>
+            <div>
+              <p>Sexo: </p>
+              <div>
+                <i class='bx bx-md bx-male-sign'></i>
+                <i class='bx bx-md bx-female-sign'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="efectiuTipos">
+          <div class="fonsEfectiu">
+            <div>
+              <p>Debil x2:</p>
+              <div class="x2">
+                <div class="recuadreTipo" id="recuadreAgua"><p>Agua</p></div>
+                <div class="recuadreTipo" id="recuadreElectrico"><p>Eléctrico</p></div>
+              </div>
+            </div>
+            <div>
+              <p>Debil x4:</p>
+              <div class="x4">
+                <div class="recuadreTipo" id="recuadreRoca"><p>Roca</p></div>
+              </div>
+            </div>
+            <div>
+              <p>Resistent 1/2:</p>
+              <div class="entre2">
+                <div class="recuadreTipo" id="recuadreFuego"><p>Fuego</p></div>
+                <div class="recuadreTipo" id="recuadreLucha"><p>Lucha</p></div>
+              </div>
+            </div>
+            <div>
+              <p>Resistent 1/4:</p>
+              <div class="entre4">
+                <div class="recuadreTipo" id="recuadreBicho"><p>Bicho</p></div>
+                <div class="recuadreTipo" id="recuadrePlanta"><p>Planta</p></div>
+              </div>
+            </div>
+            <div>
+              <p>Inmune:</p>
+              <div class="inmune">
+                <div class="recuadreTipo" id="recuadreTierra"><p>Tierra</p></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
