@@ -167,21 +167,87 @@ a{
   font-size: 16px;
 }
 
-#filtroNormal    { background-color: var(--normal); }
-#filtroPlanta    { background-color: var(--planta); }
-#filtroFuego     { background-color: var(--fuego); }
-#filtroAgua      { background-color: var(--agua); }
-#filtroLucha     { background-color: var(--lucha); }
-#filtroBicho     { background-color: var(--bicho); }
-#filtroVeneno    { background-color: var(--veneno); }
-#filtroPsiquico  { background-color: var(--psiquico); }
-#filtroFantasma  { background-color: var(--fantasma); }
-#filtroElectrico { background-color: var(--electrico); }
-#filtroHielo     { background-color: var(--hielo); }
-#filtroDragon    { background-color: var(--dragon); }
-#filtroRoca      { background-color: var(--roca); }
-#filtroTierra    { background-color: var(--tierra); }
-#filtroVolador   { background-color: var(--volador); }
+#filtroNormal{ 
+  background-color: var(--normal); 
+}
+#filtroPlanta{ 
+  background-color: var(--planta); 
+}
+#filtroFuego{ 
+  background-color: var(--fuego); 
+}
+#filtroAgua{ 
+  background-color: var(--agua); 
+}
+#filtroLucha{ 
+  background-color: var(--lucha); 
+}
+#filtroBicho{ 
+  background-color: var(--bicho); 
+}
+#filtroVeneno{ 
+  background-color: var(--veneno); 
+}
+#filtroPsiquico{ 
+  background-color: var(--psiquico); 
+}
+#filtroFantasma{ 
+  background-color: var(--fantasma); 
+}
+#filtroElectrico{ 
+  background-color: var(--electrico); 
+}
+#filtroHielo{ 
+  background-color: var(--hielo); 
+}
+#filtroDragon{ 
+  background-color: var(--dragon); 
+}
+#filtroRoca{ 
+  background-color: var(--roca); 
+}
+#filtroTierra{ 
+  background-color: var(--tierra); 
+}
+#filtroVolador{ 
+  background-color: var(--volador); 
+}
+
+.pokedex{
+  display: grid;
+  grid-template-columns: repeat(4, 200px); /* 4 columnes de 400px cadascuna */
+  gap: 50px; /* espai entre caixes */
+  justify-content: center; /* centrat horitzontalment */
+  margin: 150px auto 0px auto;
+}
+
+.divPkmn{
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0px 4px 4px #00000025;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.divPkmn:hover {
+  box-shadow: 0px 14px 14px #00000025;
+  background-color: #ededed; /* fons més fosc */
+  transform: translateY(-10px);
+}
+
+.divPkmn p{
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.divPkmn:hover p {
+  opacity: 1;
+}
 
 footer{
   margin-top: 150px;
