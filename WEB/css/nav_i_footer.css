@@ -124,6 +124,7 @@ footer{
   }
   
   .formulariFoter input, .formulariFoter textarea{
+    padding: 10px;
     width: 100%;
     border: 1px solid white;
     border-radius: 5px;
