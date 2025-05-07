@@ -1,0 +1,32 @@
+:root{
+    --normal: rgb(226, 226, 226);
+    --planta: rgb(171, 230, 160);
+    --fuego: rgb(244, 166, 166);
+    --agua: rgb(156, 201, 245);
+    --lucha: rgb(255, 183, 128);
+    --bicho: rgb(195, 212, 122);
+    --veneno: rgb(201, 164, 232);
+    --psiquico: rgb(246, 164, 187);
+    --fantasma: rgb(181, 159, 181);
+    --electrico: rgb(255, 235, 153);
+    --hielo: rgb(168, 240, 255);
+    --dragon: rgb(165, 175, 242);
+    --roca: rgb(224, 187, 94);
+    --tierra: rgb(196, 138, 98);
+    --volador: rgb(183, 216, 245);
+    --normal-rgb: 226, 226, 226;
+    --planta-rgb: 171, 230, 160;
+    --fuego-rgb: 244, 166, 166;
+    --agua-rgb: 156, 201, 245;
+    --lucha-rgb: 255, 183, 128;
+    --bicho-rgb: 195, 212, 122;
+    --veneno-rgb: 201, 164, 232;
+    --psiquico-rgb: 246, 164, 187;
+    --fantasma-rgb: 181, 159, 181;
+    --electrico-rgb: 255, 235, 153;
+    --hielo-rgb: 168, 240, 255;
+    --dragon-rgb: 165, 175, 242;
+    --roca-rgb: 224, 187, 94;
+    --tierra-rgb: 196, 138, 98;
+    --volador-rgb: 183, 216, 245;
+  }

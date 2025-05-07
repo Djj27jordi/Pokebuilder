@@ -18,9 +18,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../../IMG/eevee-night-pokemon-4k-wallpaper-uhdpaper.com-99@2@a.jpg') no-repeat center center;
+    background: url('../../IMG/eevee_login_register.jpg') no-repeat center center;
     background-size: cover;
-    z-index: 0;
+    z-index: -1;
   }
   
   /* Capa vermella en diagonal */
@@ -36,9 +36,12 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    padding-top: 5%;
     padding-left: 12%;
-    background-color: rgba(var(--normal-rgb), 0.85);
+    background-color: rgba(var(--fuego-rgb), 0.85);
     animation: rotacioColors 60s infinite linear;
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
   }
   
   /* Header */
@@ -193,10 +196,8 @@
   .login-box button:hover {
     background-color: #6eaaf5;
   }
-  
 
-
-
+  /* ANIMACIO */
   @keyframes rotacioColors {
     0%   { background-color: rgba(var(--normal-rgb), 0.85); }
     7%   { background-color: rgba(var(--planta-rgb), 0.85); }
