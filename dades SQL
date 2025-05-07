@@ -1,0 +1,22 @@
+/* Aqui ficarem dades de sql*/
+
+CREATE TABLE `if0_38922247_pokebuilder`.`pokedex` ( 
+  `ID_pokedex` INT NOT NULL AUTO_INCREMENT , 
+  `imatgeM` LONGBLOB NOT NULL , 
+  `imatgeF` LONGBLOB NOT NULL , 
+  `imatgeShinyM` LONGBLOB NOT NULL , 
+  `imatgeShinyF` LONGBLOB NOT NULL , 
+  `nom` VARCHAR(200) NOT NULL , 
+  `tipo1` INT NOT NULL , 
+  `tipo2` INT NULL , 
+  `descripcio` VARCHAR(500) NOT NULL , 
+  `pes` DECIMAL NOT NULL , 
+  `altura` DECIMAL NOT NULL , 
+  `PS` INT NOT NULL , 
+  `atac` INT NOT NULL , 
+  `defensa` INT NOT NULL , 
+  `atEspecial` INT NOT NULL , 
+  `defEspecial` INT NOT NULL , 
+  `velocitat` INT NOT NULL , 
+  `total` INT NOT NULL ) 
+ENGINE = InnoDB;
