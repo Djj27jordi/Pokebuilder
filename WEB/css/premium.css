@@ -1,0 +1,241 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* NAVBAR */
+nav{
+  width: 100%;
+  height: 100px;
+  background-color: rgba(var(--normal-rgb), 0.85); 
+  box-shadow: 0 2px 8px #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.logoMenu{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 40px;
+  height: 75px;
+}
+
+/* MENU */
+.llistaMenu{
+  list-style: none;
+  display: flex;
+  padding: 0px;
+}
+
+.menuDropdown{
+  list-style: none;
+  padding-left: 0px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem 0;
+  z-index: 1;
+
+  /* poso que cada 8 files en la columna es posi lo demes en unaltre columna */
+  grid-template-columns: repeat(2, max-content);
+  gap: 0.5rem 2rem;
+}
+
+li{
+  padding: 10px 15px 10px 15px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Mostrar el submenú en passar el ratolí */
+.dropdown:hover .menuDropdown {
+  display: grid;
+}
+
+/* perfil */
+.perfil{
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 15px 8px 15px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 3px #444;
+  gap: 10px;
+}
+
+/* BODY */
+.generalHeader{
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.generalHeader h1{
+  font-size: 2.5em;
+}
+
+.tarifes{
+  display: flex;
+  justify-content: space-between;
+}
+
+.gratis, .premium, .premiumPlus{
+  width: 250px;
+  background-color: var(--planta);
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.gratis button, .premium button, .premiumPlus button{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  padding: 10px 100px;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.generalSection{
+  background-color: var(--planta);
+  max-width: 1200px;
+  margin: 0px auto;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.generalSection_bg{
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 50px 0px;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0px 100px 0px;
+  margin-top: 100px;
+}
+
+.menuFooter{
+  border-right: 2px solid white;
+  padding-right: 2%;
+}
+
+.menuFooter h3{
+  color: white;
+  margin-bottom: 25px;
+}
+
+.menuFooter ul{
+  list-style: none;
+  padding: 0px;
+}
+
+.menuFooter li{
+  color: white;
+  padding: 7px 10px 7px 10px;
+}
+
+.menuFooter a{
+  text-decoration: none;
+}
+
+.formulariFoter{
+  width: 400px;
+}
+
+.formulariFoter h3{
+  color: white;
+}
+
+.formulariFoter label{
+  color: white;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.formulariFoter input, .formulariFoter textarea{
+  padding: 10px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.formulariFoter textarea{
+  height: 100px;
+}
+
+.contacteFooter{
+  border-left: 2px solid white;
+  padding-left: 2%;
+}
+
+.contacteFooter h3{
+  color: white;
+}
+
+.divContacte{
+  height: 175px;
+  width: 175px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.contacte{
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.contacte img{
+  width: 50px;
+}
