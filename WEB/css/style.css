@@ -104,18 +104,18 @@ section{
     border-radius: 30px;
     padding: 15px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);;
-    transition: transform 0.5s ease-in-out, 
-        background-color 0.5s ease-in-out, 
-        box-shadow 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out, 
+        background-color 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 .highlight1:hover {
     background-color: var(--agua);
     transform: translateY(-15px);
     box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.5s ease-in-out, 
-        transform 0.5s ease-in-out, 
-        box-shadow 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out, 
+        transform 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 .highlight2 {
@@ -124,9 +124,9 @@ section{
     border-radius: 30px;
     padding: 15px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: transform 0.5s ease-in-out, 
-        background-color 0.5s ease-in-out, 
-        box-shadow 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out, 
+        background-color 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 
 }
 
@@ -134,9 +134,9 @@ section{
     background-color: var(--agua);
     transform: translateY(-15px);
     box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.5s ease-in-out, 
-        transform 0.5s ease-in-out, 
-        box-shadow 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out, 
+        transform 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 .highlight3 {
@@ -148,18 +148,18 @@ section{
     border-radius: 30px;
     padding: 15px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: transform 0.5s ease-in-out, 
-        background-color 0.5s ease-in-out, 
-        box-shadow 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out, 
+        background-color 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 .highlight3:hover {
     background-color: var(--agua);
     transform: translateY(-15px);
     box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.5s ease-in-out, 
-        transform 0.5s ease-in-out, 
-        box-shadow 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out, 
+        transform 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 .highlight4 {
@@ -170,18 +170,18 @@ section{
     border-radius: 30px;
     padding: 15px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: transform 0.5s ease-in-out, 
-        background-color 0.5s ease-in-out, 
-        box-shadow 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out, 
+        background-color 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 .highlight4:hover {
     background-color: var(--agua);
     transform: translateY(-15px);
     box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.5s ease-in-out, 
-        transform 0.5s ease-in-out, 
-        box-shadow 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out, 
+        transform 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 /* ------------------------------------------------------ */
@@ -454,18 +454,18 @@ section{
     border-radius: 30px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100%;
-    transition: transform 0.5s ease-in-out, 
-        background-color 0.5s ease-in-out, 
-        box-shadow 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out, 
+        background-color 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 .titol:hover{
     background-color: var(--fuego);
     box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
     transform: translateY(-15px);
-    transition: background-color 0.5s ease-in-out, 
-        transform 0.5s ease-in-out, 
-        box-shadow 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out, 
+        transform 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 .layout_carrusel{
@@ -513,10 +513,22 @@ section{
     flex-direction: row; 
     justify-content: space-around; 
     align-items: center; 
-    width:65%; 
+    width:55%; 
     background-color: rgba(var(--hielo-rgb), 0.85); 
-    padding: 15px 0px; 
+    padding: 2rem; 
     border-radius: 30px;
+    transition: transform 0.3s ease-in-out, 
+    background-color 0.3s ease-in-out, 
+    box-shadow 0.3s ease-in-out;
+}
+
+.contingut_premium:hover{
+    background-color: var(--hielo);
+    box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
+    transform: translateY(-15px);
+    transition: background-color 0.3s ease-in-out, 
+        transform 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 .titol_foto a{
@@ -538,6 +550,7 @@ section{
 
 .text_premium{
     font-size: 1.5rem;
+    width: 50%;
 }
 
 /* ------------------------------------------ */
@@ -552,6 +565,18 @@ section{
     padding: 2rem;
     border-radius: 30px;
     width: 25%;
+    transition: transform 0.3s ease-in-out, 
+    background-color 0.3s ease-in-out, 
+    box-shadow 0.3s ease-in-out;
+}
+
+.posts_cont :hover{
+    background-color: var(--electrico);
+    box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
+    transform: translateY(-15px);
+    transition: background-color 0.3s ease-in-out, 
+        transform 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 .posts_cont p{
@@ -566,27 +591,39 @@ section{
 /* ------------------------------------ */
 /* SECCIO UNEIXTE */
 .uneixte{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
-    background-color: rgba(var(--veneno-rgb), 0.85);
-    padding:1.5rem;
-    border-radius: 30px;
-
+    width: 100%;
 }
-
 
 .uneixte_cont{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    gap: 2rem;
+    width: 40%;
+    background-color: rgba(var(--veneno-rgb), 0.85);
+    padding:2rem;
+    border-radius: 30px;
+    text-align: center;
     font-size: 1.3rem;
+    transition: transform 0.3s ease-in-out, 
+    background-color 0.3s ease-in-out, 
+    box-shadow 0.3s ease-in-out;
 }
+
+.uneixte_cont:hover{
+    background-color: var(--veneno);
+    box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
+    transform: translateY(-15px);
+    transition: background-color 0.3s ease-in-out, 
+        transform 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
+}
+
+.uneixte_cont h2{
+    width: 75%;
+}
+
 
 /* CONTINGUT POKEDEX */
 /* botons laterals */
@@ -612,7 +649,7 @@ section{
 
 .btn-content:hover,
 .btn-content:focus {
-  transition: 0.5s;
+  transition: 0.3s;
   -webkit-animation: btn-content 1s;
   animation: btn-content 1s;
   outline: 0.1em solid transparent;
@@ -621,13 +658,13 @@ section{
 }
 
 .btn-content .icon-arrow {
-  transition: 0.5s;
+  transition: 0.3s;
   margin-right: 0px;
   transform: scale(0.6);
 }
 
 .btn-content:hover .icon-arrow {
-  transition: 0.5s;
+  transition: 0.3s;
   margin-right: 25px;
 }
 
@@ -650,7 +687,7 @@ section{
 }
 
 #arrow-icon-two {
-  transition: 0.5s;
+  transition: 0.3s;
   transform: translateX(-30%);
 }
 
