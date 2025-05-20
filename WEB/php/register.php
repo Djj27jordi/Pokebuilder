@@ -25,7 +25,7 @@
           $_SESSION['suscripcio'] = $suscripcio;
           $_SESSION['imatge'] = $imatge;
 
-          header("Location: ../html/index.php");
+          header("Location: ../html/login.html");
           exit();
       } else {
           echo "Error en registrar: " . $stmt->error;
