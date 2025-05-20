@@ -7,10 +7,9 @@
       $apodo = $_POST['apodo'];
       $email = $_POST['email'];
       $contrasenya = password_hash($_POST['contrasenya'], PASSWORD_DEFAULT);
-      $admin = '0';
-      $suscripcio = 'Gratis';
+      $admin = '0';          // buida per defecte
+      $suscripcio = 'Gratis';     // buida per defecte
       $imatge = '../../IMG/pokemon/069.png';
-
 
       $stmt = $conn->prepare("INSERT INTO usuaris (nom, apodo, email, contrasenya, admin, suscripcio, imatge) VALUES (?, ?, ?, ?, ?, ?, ?)");
       $stmt->bind_param("sssssss", $nom, $apodo, $email, $contrasenya, $admin, $suscripcio, $imatge);
