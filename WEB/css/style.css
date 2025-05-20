@@ -9,11 +9,15 @@ body{
     align-items: center;
     overflow-x: hidden;
     background-image: url(../../IMG/pokeball.jpg);
-    background-size: 100%;     /* ajusta al 100% de l'amplada i alçada */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;  /* es mou amb el contingut */
+    background-attachment: fixed;
     font-family: 'roboto mono';
+}
+
+h1, h2, h3{
+    font-family: 'Tomorrow';
 }
 
 .container{
@@ -31,10 +35,9 @@ body{
 /* SECCIO HIGHLIGHTS */
 section{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 1200px;
     margin-bottom: 330px;
 }
 
@@ -72,18 +75,11 @@ section{
 
     /* HIGHLIGHTS */
 .builder_div{
-    width: 65%;
     /* background-color: green; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.builder_div h2{
-    font-size: 2.5rem;
-    font-weight: bolder;
-    
 }
 
 .highlights {
@@ -94,8 +90,8 @@ section{
     /* background-color: yellow; */
 }
 
-.titolcaixa{
-    font-size: 1.75rem;
+.titolcaixa h2{
+    font-size: 1.8rem;
 }
     
 .highlight1 {
@@ -162,11 +158,11 @@ section{
         box-shadow 0.3s ease-in-out;
 }
 
-.highlight3 .usuaripost a{
+/* .highlight3 .usuaripost a{
     width: 240px;
     height: 60px;
     border-radius: 500px;
-}
+} */
 
 .highlight4 {
     grid-row: span 5 / span 5;
@@ -208,7 +204,6 @@ section{
 }
 
 .usuaripost{
-    width: 50%; 
     display: flex; 
     flex-direction: row; 
     justify-content: space-around; 
@@ -228,12 +223,15 @@ section{
     align-items: center;
 }
 
+
 .usuaripost img{
-    height: 100%;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
 }
 
-.usuaripost h4{
-    font-size: 1.1rem
+.usuaripost p{
+    font-size: 1.3rem
 }
 
 .likespost{
@@ -295,11 +293,9 @@ section{
 /* --------------------------------------- */
 .posts{
     display: flex;
-    flex-direction: row;
     gap: 20px;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
     width: 100%;
 }
 
@@ -443,10 +439,8 @@ section{
 .carrousel_pkdx{    
     display: flex;
     flex-direction: column;
-    gap: 125px;
     justify-content: start;
     align-items: center;
-    width: 65%;
 }
 
 .titol{
@@ -459,7 +453,6 @@ section{
     padding: 15px 0px;
     border-radius: 30px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 100%;
     transition: transform 0.3s ease-in-out, 
         background-color 0.3s ease-in-out, 
         box-shadow 0.3s ease-in-out;
@@ -472,6 +465,14 @@ section{
     transition: background-color 0.3s ease-in-out, 
         transform 0.3s ease-in-out, 
         box-shadow 0.3s ease-in-out;
+}
+
+.titol h2{
+    font-size: 1.8rem;
+}
+
+.titol p{
+    font-size: 1.3rem;
 }
 
 .layout_carrusel{
@@ -515,14 +516,11 @@ section{
 /* ---------------------------------- */
 /* SECCIO PREMIUM */
 .contingut_premium{
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-around; 
-    align-items: center; 
-    width:55%; 
+    width: 700px; 
     background-color: rgba(var(--hielo-rgb), 0.85); 
     padding: 2rem; 
     border-radius: 30px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease-in-out, 
     background-color 0.3s ease-in-out, 
     box-shadow 0.3s ease-in-out;
@@ -535,6 +533,16 @@ section{
     transition: background-color 0.3s ease-in-out, 
         transform 0.3s ease-in-out, 
         box-shadow 0.3s ease-in-out;
+}
+
+.contingut_premium h2{
+    font-size: 1.8rem;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .titol_foto a{
@@ -555,40 +563,32 @@ section{
 }
 
 .text_premium{
-    font-size: 1.5rem;
     width: 50%;
+}
+
+.text_premium p{
+    font-size: 1.3rem;
 }
 
 /* ------------------------------------------ */
 /* SECCIO POSTS */
 .posts_cont{
-    /* background-color: rgba(var(--electrico-rgb), 0.85);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 25px;
-    padding: 2rem;
-    border-radius: 30px; */
-    width: 25%;
-    transition: transform 0.3s ease-in-out, 
-    background-color 0.3s ease-in-out, 
-    box-shadow 0.3s ease-in-out;
-}
-
-.nosequeposarlideclase{
+    width: 300px;
     background-color: rgba(var(--electrico-rgb), 0.85);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 25px;
+    gap: 10px;
     padding: 2rem;
     border-radius: 30px;
-    width: 100%;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out, 
+    background-color 0.3s ease-in-out, 
+    box-shadow 0.3s ease-in-out;
 }
 
-.nosequeposarlideclase:hover{
+.posts_cont:hover{
     background-color: var(--electrico);
     box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
     transform: translateY(-15px);
@@ -597,12 +597,16 @@ section{
         box-shadow 0.3s ease-in-out;
 }
 
-.posts_cont p{
-    font-size: 1.5rem;
+.posts_cont h2{
+    font-size: 1.8rem;
 }
 
-.posts_cont button{
-    align-self: center;
+.posts_cont p{
+    font-size: 1.3rem;
+}
+
+.btn-conteiner{
+    margin-top: 24px;
 }
 
 
@@ -624,6 +628,7 @@ section{
     border-radius: 30px;
     text-align: center;
     font-size: 1.3rem;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease-in-out, 
     background-color 0.3s ease-in-out, 
     box-shadow 0.3s ease-in-out;
@@ -639,7 +644,7 @@ section{
 }
 
 .uneixte_cont h2{
-    width: 75%;
+    font-size: 1.8rem;
 }
 
 
@@ -776,12 +781,12 @@ section{
 
 .fblanc{
     display: flex; 
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: center; 
-    gap: 5rem; 
     background-color: white; 
     border-radius: 10px; 
     padding: 5rem; 
+    gap: 100px;
     box-shadow: inset 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 

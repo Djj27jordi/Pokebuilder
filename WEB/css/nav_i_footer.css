@@ -40,10 +40,20 @@ nav{
     border: 1px solid #ccc;
     padding: 0.5rem 0;
     z-index: 1;
+    color: black;
   
     /* poso que cada 8 files en la columna es posi lo demes en unaltre columna */
     grid-template-columns: repeat(2, max-content);
-    gap: 0.5rem 2rem;
+    /* gap: 0.5rem 2rem; */
+  }
+
+  .menuDropdown a{
+    color: black;
+  }
+
+  .menuDropdown a:hover{
+    color: black;
+    background-color: #cccccc;
   }
   
   li{
@@ -130,6 +140,7 @@ footer{
   }
   
   .formulariFoter input, .formulariFoter textarea{
+    padding: 10px;
     width: 100%;
     border: 1px solid white;
     border-radius: 5px;

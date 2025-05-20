@@ -78,7 +78,7 @@
                 <li>Qui som?</li>
             </a>
             </ul>
-          </div>
+            </div>
         </div>
         <div class="perfil" id="perfil">
         <?php if (isset($_SESSION['usuari'])): ?>
@@ -87,11 +87,11 @@
         <?php else: ?>
             <a href="login.html">Inicia sessió</a>
         <?php endif; ?>
-    </div>
+        </div>
     </nav>
 
     <section class="pokebuilder">
-            <h1>POKÉBUILDER</h1>
+        <h1>POKÉBUILDER</h1>
     </section>
 
     <!-- SECCIO BUILDER -->
@@ -109,7 +109,7 @@
                                     <a href="">
                                         <img src="https://img.pokemondb.net/sprites/black-white/shiny/electrode.png" alt="ImatgeUsuari">
                                     </a>
-                                    <h4>Xplsn.Lvr69</h4>
+                                    <p>Xplsn.Lvr69</p>
                                 </div>
                                 <div class="likespost">
                                     <p>545</p>
@@ -152,15 +152,15 @@
                 
                 <!-- 2a caixa -->
                 <div class="highlight2">
-                    <h2 class="titolcaixa">titol caixa</h2>
+                    <h2 class="titolcaixa">Most Download Team</h2>
                     <div class="posInici">
                         <div class="usrPost">
                             <div class="post_info">
                                 <div class="usuaripost">
-                                    <a href="" style="background-color: #ffffffd9; overflow: hidden; height: 60px; width: 60px; border-radius: 500px; box-shadow: 2px 4px 4px #00000040; display: flex; justify-content: center; align-items: center;">
-                                        <img  style="height: 65px;" src="https://img.pokemondb.net/sprites/black-white/shiny/electrode.png" alt="Electrode">
+                                    <a href="" >
+                                        <img src="https://img.pokemondb.net/sprites/black-white/shiny/electrode.png" alt="Electrode">
                                     </a>
-                                    <h4 class="User_name_highlight" style="font-size: 1.1rem;">Xplsn.Lvr69</h4>
+                                    <p class="User_name_highlight" style="font-size: 1.1rem;">Xplsn.Lvr69</p>
                                 </div>
                                 <div class="likespost" style="width: 50%; display: flex; font-display: row; justify-content: end; align-items: center; gap: 5px;">
                                     <p>545</p>
@@ -211,7 +211,7 @@
                                             <a href="">
                                                 <img src="https://img.pokemondb.net/sprites/black-white/shiny/electrode.png" alt="Electrode">
                                             </a>
-                                            <h4 class="User_name_highlight">Xplsn.Lvr69</h4>
+                                            <p class="User_name_highlight">Xplsn.Lvr69</p>
                                         </div>
                                     </div>
                                     <div class="equipPost">
@@ -251,7 +251,7 @@
                                             <a href="">
                                                 <img src="https://img.pokemondb.net/sprites/black-white/shiny/electrode.png" alt="Electrode">
                                             </a>
-                                            <h4 class="User_name_highlight">Xplsn.Lvr69</h4>
+                                            <p class="User_name_highlight">Xplsn.Lvr69</p>
                                         </div>
                                     </div>
                                     <div class="equipPost">
@@ -399,16 +399,15 @@
             <img src="../../IMG/movil.png" alt="">
         </div>
         <div class="posts_cont">
-            <div class="nosequeposarlideclase">
-                <h2>Comunitat</h2>
-                <p>Mira tot tipus de combinacions posibles amb equips que la gent crea</p>
-                <p>Si creus que el teu equip és digne, pots publicar-ho per a que la gent ho vegi</p>
-                <div class="btn-conteiner">
-                    <a href="#" class="btn-content post-btn">
-                        Comunitat
-                    </a>
-                </div>
+            <h2>Comunitat</h2>
+            <p>Mira tot tipus de combinacions posibles amb equips que la gent crea</p>
+            <p>Si creus que el teu equip és digne, pots publicar-ho per a que la gent ho vegi</p>
+            <div class="btn-conteiner">
+                <a href="#" class="btn-content post-btn">
+                    Comunitat
+                </a>
             </div>
+        </div>
       </section>
 
 
@@ -416,19 +415,21 @@
     <!-- SECCIÓ PREMIUM -->
      <section class="premium">
         <div class="contingut_premium">
-            <div class="titol_foto">
-                <h2>Comença sent el millor</h2>
-                <a href="https://pokemondb.net/pokedex/meowth">
-                    <img src="https://img.pokemondb.net/sprites/black-white/normal/meowth.png" alt="Meowth">
-                </a>
-            </div>
-            <div class="text_premium">
-                <p>Aprofita a obtenir tot el contingut i aprofitar al maxim tot el que t’oferim.</p>
-                <p>Agafa el nostre pack premium i comença sent el millor</p>
-                <div class="btn-conteiner">
-                    <a href="#" class="btn-content premium-btn">
-                        Plans Premium
+            <h2>Comença sent el millor</h2>
+            <div class="cont">
+                <div class="titol_foto">
+                    <a href="https://pokemondb.net/pokedex/meowth">
+                        <img src="https://img.pokemondb.net/sprites/black-white/normal/meowth.png" alt="Meowth">
                     </a>
+                </div>
+                <div class="text_premium">
+                    <p>Aprofita a obtenir tot el contingut i aprofitar al maxim tot el que t’oferim.</p>
+                    <p>Agafa el nostre pack premium i comença sent el millor</p>
+                    <div class="btn-conteiner">
+                        <a href="#" class="btn-content premium-btn">
+                            Plans Premium
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
