@@ -399,13 +399,15 @@
             <img src="../../IMG/movil.png" alt="">
         </div>
         <div class="posts_cont">
-            <h2>Comunitat</h2>
-            <p>Mira tot tipus de combinacions posibles amb equips que la gent crea</p>
-            <p>Si creus que el teu equip és digne, pots publicar-ho per a que la gent ho vegi</p>
-            <div class="btn-conteiner">
-                <a href="#" class="btn-content post-btn">
-                    Comunitat
-                </a>
+            <div class="nosequeposarlideclase">
+                <h2>Comunitat</h2>
+                <p>Mira tot tipus de combinacions posibles amb equips que la gent crea</p>
+                <p>Si creus que el teu equip és digne, pots publicar-ho per a que la gent ho vegi</p>
+                <div class="btn-conteiner">
+                    <a href="#" class="btn-content post-btn">
+                        Comunitat
+                    </a>
+                </div>
             </div>
       </section>
 
