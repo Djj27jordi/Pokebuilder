@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
     --normal: rgb(226, 226, 226);
     --planta: rgb(171, 230, 160);
@@ -14,6 +16,7 @@
     --roca: rgb(224, 187, 94);
     --tierra: rgb(196, 138, 98);
     --volador: rgb(183, 216, 245);
+    --dark:rgb(26, 26, 26);
     --normal-rgb: 226, 226, 226;
     --planta-rgb: 171, 230, 160;
     --fuego-rgb: 244, 166, 166;
@@ -29,4 +32,9 @@
     --roca-rgb: 224, 187, 94;
     --tierra-rgb: 196, 138, 98;
     --volador-rgb: 183, 216, 245;
+    --dark-bg: 26, 26, 26;
+  }
+
+  body{
+    font-family: 'roboto mono';
   }
