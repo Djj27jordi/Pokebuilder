@@ -49,11 +49,15 @@
     <div class="overlay-red">
         <div class="login-box">
           <h1>Iniciar Sessio</h1>
-          <label for="usuari">Usuari:</label>
-          <input type="text" id="usuari" />
-          <label for="contrasenya">Contrasenya:</label>
-          <input type="password" id="contrasenya" />
-          <button>Iniciar Sessio</button>
+          <form action="../php/login.php" method="POST">
+            <label for="usuari">Usuari:</label>
+            <input type="text" id="usuari" name="usuari" required />
+
+            <label for="contrasenya">Contrasenya:</label>
+            <input type="password" id="contrasenya" name="contrasenya" required />
+
+            <button type="submit">Iniciar Sessió</button>
+          </form> 
           <p style="margin-top: 50px; align-self: end;">No tens conta? <a href="./register.html" style="text-decoration: underline; font-weight: bold;">Crea una</a></p>
         </div>
     </div>
