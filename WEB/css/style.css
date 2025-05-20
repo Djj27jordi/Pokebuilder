@@ -1,15 +1,18 @@
 body{
     margin: 0;
     padding: 0;
-    height: px;
     width: 100vw;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 0px;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
     overflow-x: hidden;
+    background-image: url(../../IMG/pokeball.jpg);
+    background-size: 100%;     /* ajusta al 100% de l'amplada i alçada */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;  /* es mou amb el contingut */
 }
 
 .container{
@@ -22,61 +25,80 @@ body{
     margin-top: 300px;
 }
 
-.fons{
-    height: 250px;
-    width: 150vw;
-    background-color: #e2e2e2;
-    box-shadow: inset 0px 15px 5px rgba(0,0,0,0.25), 0px 5px 10px rgba(0,0,0,0.25);
-    transform: rotate(-16deg); 
-    z-index: -1;
-    margin-bottom: 150px;
-    margin-top: 150px;
-}
-
-
-.triangleinici {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 100vw;
-    height: 550px;
-    background: linear-gradient(to bottom, #444444 1%, #e2e2e2 100%);            
-    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
-    z-index: -1;
-}
-
-.trianglefinal {
-    bottom: 0;
-    right: 0;
-    width: 100vw;
-    height: 550px;
-    background: linear-gradient(to top, #444444 1%, #e2e2e2 90%);
-    clip-path: polygon(100% 100%, 03% 100%, 100% 0%);
-    z-index: -1;
-}
-
-header{
-    background-color: rgba(226, 226, 226, 0.85);
-    height: 100px; 
-    width: 100%;
-    box-shadow: 0px 4px 4px #00000025;
-}
-
 /* CAIXES DE CONTINGUT */
 
+/* SECCIO HIGHLIGHTS */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 330px;
+}
+
+/* TITOL */
+.pokebuilder {
+    margin-bottom:600px;
+}
+
+.pokebuilder h1 {
+    font-size: 5rem;
+    color: var(--normal);
+    animation: rotacioColors 90s infinite linear;
+    text-shadow: 0px 0px 10px rgba(var(--normal-rgb), 0.5);
+}
+  /* ANIMACIO */
+  @keyframes rotacioColors {
+    0%   { color: var(--normal); text-shadow: 0px 0px 10px rgba(var(--normal-rgb), 0.5);}
+    7%   { color: var(--planta); text-shadow: 0px 0px 10px rgba(var(--planta-rgb), 0.5); }
+    14%  { color: var(--fuego); text-shadow: 0px 0px 10px rgba(var(--fuego-rgb), 0.5); }
+    21%  { color: var(--agua); text-shadow: 0px 0px 10px rgba(var(--agua-rgb), 0.5); }
+    28%  { color: var(--lucha); text-shadow: 0px 0px 10px rgba(var(--lucha-rgb), 0.5); }
+    35%  { color: var(--bicho); text-shadow: 0px 0px 10px rgba(var(--bicho-rgb), 0.5); }
+    42%  { color: var(--veneno); text-shadow: 0px 0px 10px rgba(var(--veneno-rgb), 0.5); }
+    49%  { color: var(--psiquico); text-shadow: 0px 0px 10px rgba(var(--psiquico-rgb), 0.5); }
+    56%  { color: var(--fantasma); text-shadow: 0px 0px 10px rgba(var(--fantasma-rgb), 0.5); }
+    63%  { color: var(--electrico); text-shadow: 0px 0px 10px rgba(var(--electrico-rgb), 0.5); }
+    70%  { color: var(--hielo); text-shadow: 0px 0px 10px rgba(var(--hielo-rgb), 0.5); }
+    77%  { color: var(--dragon); text-shadow: 0px 0px 10px rgba(var(--dragon-rgb), 0.5); }
+    84%  { color: var(--roca); text-shadow: 0px 0px 10px rgba(var(--roca-rgb), 0.5); }
+    91%  { color: var(--tierra); text-shadow: 0px 0px 10px rgba(var(--tierra-rgb), 0.5); }
+    100% { color: var(--volador); text-shadow: 0px 0px 10px rgba(var(--volador-rgb), 0.5); }
+  }
+  
 
     /* HIGHLIGHTS */
+.builder_div{
+    width: 65%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.builder_div h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    
+}
+
 .highlights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    width: 75%;
-    padding: 2%;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.titolcaixa{
+    font-size: 1.75rem;
 }
     
 .highlight1 {
     grid-row: span 3 / span 3;
-    background-color: rgba(158, 201, 245, 0.85);
+    background-color: rgba(var(--agua-rgb), 0.85);
     border-radius: 30px;
     padding: 15px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);;
@@ -86,7 +108,7 @@ header{
 }
 
 .highlight1:hover {
-    background-color: rgba(158, 201, 245, 1);
+    background-color: var(--agua);
     transform: translateY(-15px);
     box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
     transition: background-color 0.5s ease-in-out, 
@@ -96,7 +118,7 @@ header{
 
 .highlight2 {
     grid-row: span 3 / span 3;
-    background-color: rgba(158, 201, 245, 0.85);
+    background-color: rgba(var(--agua-rgb), 0.85);
     border-radius: 30px;
     padding: 15px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
@@ -107,7 +129,7 @@ header{
 }
 
 .highlight2:hover {
-    background-color: rgba(158, 201, 245, 1);
+    background-color: var(--agua);
     transform: translateY(-15px);
     box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
     transition: background-color 0.5s ease-in-out, 
@@ -120,7 +142,7 @@ header{
     grid-row: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 4;
-    background-color: rgba(158, 201, 245, 0.85);
+    background-color: rgba(var(--agua-rgb), 0.85);
     border-radius: 30px;
     padding: 15px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
@@ -130,7 +152,7 @@ header{
 }
 
 .highlight3:hover {
-    background-color: rgba(158, 201, 245, 1);
+    background-color: var(--agua);
     transform: translateY(-15px);
     box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
     transition: background-color 0.5s ease-in-out, 
@@ -142,7 +164,7 @@ header{
     grid-row: span 5 / span 5;
     grid-column-start: 3;
     grid-row-start: 1;
-    background-color: rgba(158, 201, 245, 0.85);
+    background-color: rgba(var(--agua-rgb), 0.85);
     border-radius: 30px;
     padding: 15px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
@@ -152,7 +174,7 @@ header{
 }
 
 .highlight4:hover {
-    background-color: rgba(158, 201, 245, 1);
+    background-color: var(--agua);
     transform: translateY(-15px);
     box-shadow: 2px 19px 6px rgba(0, 0, 0, 0.25);
     transition: background-color 0.5s ease-in-out, 
@@ -199,7 +221,7 @@ header{
 }
 
 .usuaripost img{
-    height: 65px;
+    height: 100%;
 }
 
 .usuaripost h4{
@@ -217,7 +239,6 @@ header{
 
 .likepost i{
     font-size: 2rem; 
-    color: black;
 }
 
 
@@ -240,12 +261,12 @@ header{
 }
 
 .fila1 img, .fila2 img{
-    height: 100px;
+    height: 100%;
 }
 
 .pokemons{
     padding: 25px;
-    padding-top: 10px; 
+    color: white; 
     border-radius: 30px;  
     display: flex; 
     flex-direction: column; 
@@ -257,7 +278,6 @@ header{
 }
 
 .pokemons p{
-    color: white; 
     align-self: flex-start; 
     font-weight: bold; 
     font-size: 1.15rem;
@@ -280,5 +300,269 @@ header{
     flex-direction: column;
     gap: 20px;
     justify-content: start;
+}
+
+
+/* ---------------------------------------- */
+
+.highlight4{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: start;
+    align-items: center;
+}
+
+.equip_vertical{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 0.5rem;
+    row-gap: 2rem;
+}
+
+.titol_caixa_vertical {
+    text-align: center;
+}
+
+.equip_vertical a{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #ffffffd9; 
+    overflow: hidden; 
+    height: 127.5px;
+    width: 127.5px; 
+    border-radius: 15px; 
+    box-shadow: 2px 4px 4px #00000040; 
+    border: 1px solid black;
+}
+
+.equip_vertical img{
+        height: 100%;
+       
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.highlight4 button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+}
+
+.highlight4 button.learn-more {
+ width: 15rem;
+ height: auto;
+}
+
+.highlight4 button.learn-more .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background: #282936;
+ border-radius: 1.625rem;
+}
+
+.highlight4 button.learn-more .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+.highlight4 button.learn-more .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+.highlight4 button.learn-more .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+}
+
+.highlight4 button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: #282936;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.highlight4 button:hover .circle {
+ width: 100%;
+}
+
+.highlight4 button:hover .circle .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+}
+
+.highlight4 button:hover .button-text {
+ color: #fff;
+}
+/* ---------------------------------------------------- */
+/* SECCIO POKEDEX */
+.carrousel_pkdx{    
+    display: flex;
+    flex-direction: column;
+    gap: 125px;
+    justify-content: start;
+    align-items: center;
+    width: 65%;
+}
+
+.titol{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(var(--fuego-rgb), 0.85);
+    padding: 15px 0px;
+    border-radius: 30px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+
+
+.layout_carrusel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.imglateral a{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #ffffffd9; 
+    overflow: hidden; 
+    height: 170px;
+    width: 170px; 
+    border-radius: 15px; 
+    box-shadow: 0px 0px 4px 2px #00000040;
+    outline: 20px solid rgba(var(--fuego-rgb), 0.85);
+}
+
+.imgcentre a{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #ffffffd9; 
+    overflow: hidden; 
+    height: 212.5px;
+    width: 212.5px; 
+    border-radius: 15px; 
+    box-shadow: 0px 0px 4px 2px #00000040;
+    outline: 20px solid rgba(var(--fuego-rgb), 0.85);
+}
+
+.imglateral img, .imgcentre img{
+    height: 100%;
+}
+/* ---------------------------------- */
+/* SECCIO PREMIUM */
+.contingut_premium{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center; 
+    width:65%; 
+    background-color: rgba(var(--hielo-rgb), 0.85); 
+    padding: 15px 0px; 
+    border-radius: 30px;
+}
+
+.titol_foto a{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #ffffffd9; 
+    overflow: hidden; 
+    height: 255px;
+    width: 255px; 
+    border-radius: 15px; 
+    box-shadow: 2px 4px 4px #00000040; 
+    border: 1px solid black;
+}
+
+.titol_foto img{
+    height: 100%;
+}
+
+.text_premium{
+    font-size: 1.5rem;
+}
+
+/* ------------------------------------------ */
+/* SECCIO POSTS */
+.posts_cont{
+    background-color: rgba(var(--electrico-rgb), 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 2rem;
+    border-radius: 30px;
+    width: 25%;
+}
+
+.posts_cont p{
+    font-size: 1.5rem;
+}
+
+.posts_cont button{
+    align-self: center;
+}
+
+
+/* ------------------------------------ */
+/* SECCIO UNEIXTE */
+.uneixte_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(var(--veneno-rgb), 0.85);
+    padding:1.5rem;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    width: 35%;
+    height: 250px;
 }
 
