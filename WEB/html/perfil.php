@@ -53,7 +53,7 @@
             <?php endif; ?>
         </div>
     </nav>
-
+<div class="cont_blanc">
   <section>
     <div class="estruct">
       <div class="dadesPrincipal">
@@ -99,6 +99,7 @@
       </div>
     </div>
   </section>
+</div>
 
 <footer>
             <div class="menuFooter">

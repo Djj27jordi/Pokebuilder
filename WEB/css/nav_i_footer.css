@@ -21,6 +21,18 @@ nav{
     gap: 40px;
     height: 75px;
   }
+
+  nav a{
+    padding: 10px 15px 10px 15px;
+  }
+
+  .logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 40px;
+    height: 75px;
+  }
   
   /* MENU */
   .llistaMenu{
@@ -45,24 +57,23 @@ nav{
     grid-template-columns: repeat(2, max-content);
   }
   
-
   .menuDropdown a{
+    display: block;
     color: white;
+    padding: 10px 15px 10px 15px;
   }
 
   .menuDropdown a:hover{
     color: white;
     background-color: rgb(69, 69, 69);
   }
-  
 
   li{
-    padding: 10px 15px 10px 15px;
+    padding: 0px;
   }
   
   a{
     text-decoration: none;
-    /* color: black; */
     color: white;
   }
   

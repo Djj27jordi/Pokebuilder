@@ -59,34 +59,34 @@ session_start();
     </nav>
   <div class="cont_blanc">
     
-  <h1 style="font-size: 5rem; text-align:center; font-family: 'roboto';">Team Builder</h1>
-  <!-- <section class="pokemonsSel">
-    <div class="seleccioPokemon">
-      <form action="" style="display: flex; flex-direction: row; gap: 10px;">
-        <div class="poke" style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+    <h1>Team Builder</h1>
+    <!-- <section class="pokemonsSel">
+      <div class="seleccioPokemon">
+        <form action="" style="display: flex; flex-direction: row; gap: 10px;">
+          <div class="poke" style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+            <span class="equipPokemon" style="display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center;">
+              <img src="../../img/plus.png" id="pokemon1" alt="" style="width: 100px; height: 100px; align-self: center;">
+            </span>
+            <label for="pokemon" style="display: none;">Nom del Pokemon</label>
+            <input type="text" name="pokemon" placeholder="Pokemon">
+          </div>
+        </form>
+      </div>
+    </section> -->
+    <section class="pokemonsSel">
+      <div class="seleccioPokemon" style="display: flex; flex-direction: row; gap: 10px;" id="pokemonTeam">
+
+        <!-- PLUS BUTTON -->
+        <div class="poke plus" style="display: flex; flex-direction: column; gap: 10px; align-items: center; cursor: pointer;">
           <span class="equipPokemon" style="display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center;">
-            <img src="../../img/plus.png" id="pokemon1" alt="" style="width: 100px; height: 100px; align-self: center;">
+            <img src="../../img/plus.png" id="plusIcon" alt="+" style="width: 100px; height: 100px; align-self: center;">
           </span>
           <label for="pokemon" style="display: none;">Nom del Pokemon</label>
-          <input type="text" name="pokemon" placeholder="Pokemon">
+          <input type="text" name="pokemon" placeholder="Pokemon" id="pokemonInput" autocomplete="off">
         </div>
-      </form>
-    </div>
-  </section> -->
-  <section class="pokemonsSel">
-  <div class="seleccioPokemon" style="display: flex; flex-direction: row; gap: 10px;" id="pokemonTeam">
 
-    <!-- PLUS BUTTON -->
-    <div class="poke plus" style="display: flex; flex-direction: column; gap: 10px; align-items: center; cursor: pointer;">
-      <span class="equipPokemon" style="display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center;">
-        <img src="../../img/plus.png" id="plusIcon" alt="+" style="width: 100px; height: 100px; align-self: center;">
-      </span>
-      <label for="pokemon" style="display: none;">Nom del Pokemon</label>
-      <input type="text" name="pokemon" placeholder="Pokemon" id="pokemonInput" autocomplete="off">
-    </div>
-
-  </div>
-</section>
+      </div>
+    </section>
   
   <section>
     <div class="dadesPokemon">
@@ -94,48 +94,6 @@ session_start();
       <div class="fons1">
         <div class="fons2 centSelPkmn">
           <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" id="pokemonSel" class="pokemonSel" alt="">
-        </div>
-      </div>
-      <!-- MOVIMENTS  -->
-      <div class="fons1">
-        <div class="genere">
-          <div class="gen_shsiny" style="display: flex; flex-direction: row; gap: 60px;">
-            <h2>Genere</h2>
-            <h2>Shiny</h2>
-          </div>
-          <div class="centreGenere">
-              <div class="genereHome">
-                <input type="radio" name="homeDona" class="signeHome" id="signeHome" value="home">
-                <label for="home"><i class='bx bx-md bx-male-sign'></i></label>
-              </div>
-              <div class="genereDona">
-                <input type="radio" name="homeDona" class="signeDona" id="signeDona" value="dona">
-                <label for="dona"><i class='bx bx-md bx-female-sign'></i></label>
-              </div>
-            <div class="Shiny" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-end;">
-              <div class="esShiny">
-                <input type="checkbox" name="es_shiny" class="shinyy" id="shiny" value="shiny">
-                <label for="home">Shiny</label>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h2>Moviments</h2>
-            <div class="selMove">
-              <select name="move1" id="move1" class="move1" required>
-                <option value="" selected disabled>Moviment 1</option>
-              </select>
-              <select name="move2" id="move2" class="move2" required>
-                <option value="" selected disabled>Moviment 2</option>
-              </select>
-              <select name="move3" id="move3" class="move3" required>
-                <option value="" selected disabled>Moviment 3</option>
-              </select>
-              <select name="move4" id="move4" class="move4" required>
-                <option value="" selected disabled>Moviment 4</option>
-              </select>
-            </div>
-          </div>
         </div>
       </div>
       <!-- STATS -->
@@ -227,7 +185,49 @@ session_start();
           </tbody>
         </table>
       </div>
-
+      <!-- MOVIMENTS  -->
+      <div class="fons1">
+        <div class="genere">
+          <div class="gen_shsiny" style="display: flex; flex-direction: row; gap: 60px;">
+            <h2>Genere</h2>
+          </div>
+          <div class="centreGenere">
+            <div class="ordenarGenereShiny">
+              <div class="genereHome">
+                <input type="radio" name="homeDona" class="signeHome" id="signeHome" value="home">
+                <label for="home"><i class='bx bx-md bx-male-sign'></i></label>
+              </div>
+              <div class="genereDona">
+                <input type="radio" name="homeDona" class="signeDona" id="signeDona" value="dona">
+                <label for="dona"><i class='bx bx-md bx-female-sign'></i></label>
+              </div>
+            </div>
+            <div class="Shiny" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-end;">
+              <div class="esShiny">
+                <input type="checkbox" name="es_shiny" class="shinyy" id="shiny" value="shiny">
+                <label for="home">Shiny</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2>Moviments</h2>
+            <div class="selMove">
+              <select name="move1" id="move1" class="move1" required>
+                <option value="" selected disabled>Moviment 1</option>
+              </select>
+              <select name="move2" id="move2" class="move2" required>
+                <option value="" selected disabled>Moviment 2</option>
+              </select>
+              <select name="move3" id="move3" class="move3" required>
+                <option value="" selected disabled>Moviment 3</option>
+              </select>
+              <select name="move4" id="move4" class="move4" required>
+                <option value="" selected disabled>Moviment 4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
   
   <section class="sectDesc">

@@ -4,6 +4,16 @@ html, body{
 }
 
 /* body builder */
+h1{
+  margin-top: 100px;
+  font-size: 2.5rem;
+  font-family: 'Tomorrow';
+  text-align: center;
+}
+
+p{
+  font-family: 'Roboto Mono';
+}
 
 .pokemonsSel{
   height: 400px;
@@ -27,6 +37,8 @@ section{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 1200px;
+  margin: 0px auto;
 }
 
 .sectGuardar{
@@ -115,6 +127,9 @@ th, td{
 
 h2{
   padding-left: 20px;
+  font-family: 'Tomorrow';
+  font-size: 1.8rem;
+  margin: 15px 0px;
 }
 
 .IvPS, .EvPS, .IvAtac, .EvAtac, .IvDefensa, .EvDefensa, .IvAtEspecial, .EvAtEspecial, .IvDefEspecial, .EvDefEspecial, .IvVelocitat, .EvVelocitat{
@@ -127,8 +142,14 @@ h2{
 
 .centreGenere{
   display: flex;
-  gap: 20px;
-  padding-left: 30px;
+  padding: 0px 30px;
+  justify-content: space-between;
+}
+
+.ordenarGenereShiny{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .genereHome, .genereDona{
@@ -150,6 +171,7 @@ input, select {
   vertical-align: middle;
   line-height: normal;
   font-size: 1em;
+  font-family: 'Roboto Mono';
 }
 
 .move1, .move2, .move3, .move4{
@@ -180,7 +202,9 @@ input, select {
   border-radius: 5px;
 }
 
-
+.divDescripcio textarea{
+  padding: 10px;
+}
 
 /* DROPDOWN */
 
@@ -215,7 +239,7 @@ input, select {
 
 
 
-/* From Uiverse.io by jeremyssocial */ 
+/* FONS */ 
 .fons_barres {
   display: flex;
   flex-direction: column;
@@ -247,8 +271,8 @@ input, select {
 }
 
 .cont_blanc{
-  padding: 0px 20px 0px 20px;
-  background-color: rgb(240, 240, 240);
+  background-color:white;
   border-radius: 10px;
-  width: 65%;
+  max-width: 1400px;
+  width: 100%;
 }

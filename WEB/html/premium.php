@@ -54,87 +54,89 @@
         </div>
     </nav>
 
-  <header>
-    <div class="generalHeader">
-      <h1>Tarifes Premium</h1>
-      <div class="tarifes">
-        <div class="gratis">
-          <h2>Pla Gratis</h2>
-          <p>7 espais més per crear equips pokemon</p>
-          <p>Veure equips comunitat (veure els detalls no incluit)</p>
-          <button>Comprar</button>
-        </div>
-        <div class="premium">
-          <h2>Premium</h2>
-          <p>Inclou tot el contingut de Pla gratis</p>
-          <p>+ 17 espais més per crear equips pokemon</p>
-          <p>+ Veure equips comunitat</p>
-          <p>+ Veure detalls dels equips de la comunitat</p>
-          <p>+ Permet importar els equips</p>
-          <button>Comprar</button>
-        </div>
-        <div class="premiumPlus">
-          <h2>Premium +</h2>
-          <p>Inclou tot el contingut dels Plans anteriors</p>
-          <p>+ Espais ilimitats per crear equips pokemon</p>
-          <p>+ Veure equips comunitat</p>
-          <p>+ Veure detalls dels equips de la comunitat</p>
-          <p>+ Permet descarregar els equips de la comunitat i guardartels</p>
-          <p>+ Permet importar els equips i exportar</p>
-          <button>Comprar</button>
+  <div class="cont_blanc">
+    <header>
+      <div class="generalHeader">
+        <h1>Tarifes Premium</h1>
+        <div class="tarifes">
+          <div class="gratis">
+            <h2>Pla Gratis</h2>
+            <p>7 espais més per crear equips pokemon</p>
+            <p>Veure equips comunitat (veure els detalls no incluit)</p>
+            <button>Comprar</button>
+          </div>
+          <div class="premium">
+            <h2>Premium</h2>
+            <p>Inclou tot el contingut de Pla gratis</p>
+            <p>+ 17 espais més per crear equips pokemon</p>
+            <p>+ Veure equips comunitat</p>
+            <p>+ Veure detalls dels equips de la comunitat</p>
+            <p>+ Permet importar els equips</p>
+            <button>Comprar</button>
+          </div>
+          <div class="premiumPlus">
+            <h2>Premium +</h2>
+            <p>Inclou tot el contingut dels Plans anteriors</p>
+            <p>+ Espais ilimitats per crear equips pokemon</p>
+            <p>+ Veure equips comunitat</p>
+            <p>+ Veure detalls dels equips de la comunitat</p>
+            <p>+ Permet descarregar els equips de la comunitat i guardartels</p>
+            <p>+ Permet importar els equips i exportar</p>
+            <button>Comprar</button>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-
-  <section>
-    <div class="generalSection">
-      <div class="generalSection_bg">
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Plan Gratis</th>
-              <th>Premium</th>
-              <th>Premium +</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Més espai per equips</td>
-              <td class="check">✔️</td>
-              <td class="check">✔️</td>
-              <td class="check">✔️</td>
-            </tr>
-            <tr>
-              <td>Acces a la comunitat</td>
-              <td class="check">✔️</td>
-              <td class="check">✔️</td>
-              <td class="check">✔️</td>
-            </tr>
-            <tr>
-              <td>Acces als detalls equips comunitat</td>
-              <td class="cross">❌</td>
-              <td class="check">✔️</td>
-              <td class="check">✔️</td>
-            </tr>
-            <tr>
-              <td>Descarregar equips</td>
-              <td class="cross">❌</td>
-              <td class="cross">❌</td>
-              <td class="check">✔️</td>
-            </tr>
-            <tr>
-              <td>Importar i exportar els teus equips</td>
-              <td class="cross">❌</td>
-              <td class="cross">❌</td>
-              <td class="check">✔️</td>
-            </tr>
-          </tbody>
-        </table>
+    </header>
+  
+    <section>
+      <div class="generalSection">
+        <div class="generalSection_bg">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Plan Gratis</th>
+                <th>Premium</th>
+                <th>Premium +</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Més espai per equips</td>
+                <td class="check">✔️</td>
+                <td class="check">✔️</td>
+                <td class="check">✔️</td>
+              </tr>
+              <tr>
+                <td>Acces a la comunitat</td>
+                <td class="check">✔️</td>
+                <td class="check">✔️</td>
+                <td class="check">✔️</td>
+              </tr>
+              <tr>
+                <td>Acces als detalls equips comunitat</td>
+                <td class="cross">❌</td>
+                <td class="check">✔️</td>
+                <td class="check">✔️</td>
+              </tr>
+              <tr>
+                <td>Descarregar equips</td>
+                <td class="cross">❌</td>
+                <td class="cross">❌</td>
+                <td class="check">✔️</td>
+              </tr>
+              <tr>
+                <td>Importar i exportar els teus equips</td>
+                <td class="cross">❌</td>
+                <td class="cross">❌</td>
+                <td class="check">✔️</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
     <footer>
             <div class="menuFooter">

@@ -53,122 +53,125 @@
             <?php endif; ?>
         </div>
     </nav>
-
-  <header>
-    <div class="divBuscador">
-      <input type="text" placeholder="Cerca..." class="buscador">
-      <i class='bx bx-search-alt-2 lupa'></i>
-    </div>
-  </header>
-
-  <section>
-    <div class="divFiltro">
-      <div class="filtro" id="filtroNormal"><p>Normal</p></div>
-      <div class="filtro" id="filtroPlanta"><p>Planta</p></div>
-      <div class="filtro" id="filtroFuego"><p>Fuego</p></div>
-      <div class="filtro" id="filtroAgua"><p>Agua</p></div>
-      <div class="filtro" id="filtroLucha"><p>Lucha</p></div>
-      <div class="filtro" id="filtroBicho"><p>Bicho</p></div>
-      <div class="filtro" id="filtroVeneno"><p>Veneno</p></div>
-      <div class="filtro" id="filtroPsiquico"><p>Psiquico</p></div>
-      <div class="filtro" id="filtroFantasma"><p>Fantasma</p></div>
-      <div class="filtro" id="filtroElectrico"><p>Eléctrico</p></div>
-      <div class="filtro" id="filtroHielo"><p>Hielo</p></div>
-      <div class="filtro" id="filtroDragon"><p>Dragon</p></div>
-      <div class="filtro" id="filtroRoca"><p>Roca</p></div>
-      <div class="filtro" id="filtroTierra"><p>Tierra</p></div>
-      <div class="filtro" id="filtroVolador"><p>Volador</p></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="pokedex">
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#001</p>
-          <img src="../../IMG/Pokemons/001.png" alt="Bulbasaur">
-          <p>Bulbasaur</p>
-        </div>
-      </a>
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#002</p>
-          <img src="../../IMG/Pokemons/002.png" alt="Ivysaur">
-          <p>Ivysaur</p>
-        </div>
-      </a>
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#003</p>
-          <img src="../../IMG/Pokemons/003M.png" alt="Venusaur">
-          <p>Venusaur</p>
-        </div>
-      </a>
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#004</p>
-          <img src="../../IMG/Pokemons/004.png" alt="Charmander">
-          <p>Charmander</p>
-        </div>
-      </a>
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#005</p>
-          <img src="../../IMG/Pokemons/005.png" alt="Charmeleon">
-          <p>Charmeleon</p>
-        </div>
-      </a>
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#006</p>
-          <img src="../../IMG/Pokemons/006.png" alt="Charizard">
-          <p>Charizard</p>
-        </div>
-      </a>
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#007</p>
-          <img src="../../IMG/Pokemons/007.png" alt="Squirtle">
-          <p>Squirtle</p>
-        </div>
-      </a>
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#008</p>
-          <img src="../../IMG/Pokemons/008.png" alt="Wartortle">
-          <p>Wartortle</p>
-        </div>
-      </a>
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#009</p>
-          <img src="../../IMG/Pokemons/009.png" alt="Blastoise">
-          <p>Blastoise</p>
-        </div>
-      </a>
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#010</p>
-          <img src="../../IMG/Pokemons/010.png" alt="Caterpie">
-          <p>Caterpie</p>
-        </div>
-      </a>
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#011</p>
-          <img src="../../IMG/Pokemons/011.png" alt="Metapod">
-          <p>Metapod</p>
-        </div>
-      </a>
-      <a href="pokedexDetall.html">
-        <div class="divPkmn">
-          <p>#012</p>
-          <img src="../../IMG/Pokemons/012M.png" alt="Butterfree">
-          <p>Butterfree</p>
-        </div>
-      </a>
-    </div>
-  </section>
+  
+  <div class="cont_blanc">
+    <header>
+      <h1>POKÉDEX</h1>
+      <div class="divBuscador">
+        <input type="text" placeholder="Cerca..." class="buscador">
+        <i class='bx bx-search-alt-2 lupa'></i>
+      </div>
+    </header>
+  
+    <section>
+      <div class="divFiltro">
+        <div class="filtro" id="filtroNormal"><p>Normal</p></div>
+        <div class="filtro" id="filtroPlanta"><p>Planta</p></div>
+        <div class="filtro" id="filtroFuego"><p>Fuego</p></div>
+        <div class="filtro" id="filtroAgua"><p>Agua</p></div>
+        <div class="filtro" id="filtroLucha"><p>Lucha</p></div>
+        <div class="filtro" id="filtroBicho"><p>Bicho</p></div>
+        <div class="filtro" id="filtroVeneno"><p>Veneno</p></div>
+        <div class="filtro" id="filtroPsiquico"><p>Psiquico</p></div>
+        <div class="filtro" id="filtroFantasma"><p>Fantasma</p></div>
+        <div class="filtro" id="filtroElectrico"><p>Eléctrico</p></div>
+        <div class="filtro" id="filtroHielo"><p>Hielo</p></div>
+        <div class="filtro" id="filtroDragon"><p>Dragon</p></div>
+        <div class="filtro" id="filtroRoca"><p>Roca</p></div>
+        <div class="filtro" id="filtroTierra"><p>Tierra</p></div>
+        <div class="filtro" id="filtroVolador"><p>Volador</p></div>
+      </div>
+    </section>
+  
+    <section>
+      <div class="pokedex">
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#001</p>
+            <img src="../../IMG/Pokemons/001.png" alt="Bulbasaur">
+            <p>Bulbasaur</p>
+          </div>
+        </a>
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#002</p>
+            <img src="../../IMG/Pokemons/002.png" alt="Ivysaur">
+            <p>Ivysaur</p>
+          </div>
+        </a>
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#003</p>
+            <img src="../../IMG/Pokemons/003M.png" alt="Venusaur">
+            <p>Venusaur</p>
+          </div>
+        </a>
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#004</p>
+            <img src="../../IMG/Pokemons/004.png" alt="Charmander">
+            <p>Charmander</p>
+          </div>
+        </a>
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#005</p>
+            <img src="../../IMG/Pokemons/005.png" alt="Charmeleon">
+            <p>Charmeleon</p>
+          </div>
+        </a>
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#006</p>
+            <img src="../../IMG/Pokemons/006.png" alt="Charizard">
+            <p>Charizard</p>
+          </div>
+        </a>
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#007</p>
+            <img src="../../IMG/Pokemons/007.png" alt="Squirtle">
+            <p>Squirtle</p>
+          </div>
+        </a>
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#008</p>
+            <img src="../../IMG/Pokemons/008.png" alt="Wartortle">
+            <p>Wartortle</p>
+          </div>
+        </a>
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#009</p>
+            <img src="../../IMG/Pokemons/009.png" alt="Blastoise">
+            <p>Blastoise</p>
+          </div>
+        </a>
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#010</p>
+            <img src="../../IMG/Pokemons/010.png" alt="Caterpie">
+            <p>Caterpie</p>
+          </div>
+        </a>
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#011</p>
+            <img src="../../IMG/Pokemons/011.png" alt="Metapod">
+            <p>Metapod</p>
+          </div>
+        </a>
+        <a href="pokedexDetall.php">
+          <div class="divPkmn">
+            <p>#012</p>
+            <img src="../../IMG/Pokemons/012M.png" alt="Butterfree">
+            <p>Butterfree</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
 
   <footer>
             <div class="menuFooter">

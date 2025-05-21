@@ -54,155 +54,158 @@
         </div>
     </nav>
 
-  <header>
-    <div class="divBuscador">
-      <input type="text" placeholder="Cerca..." class="buscador">
-      <i class='bx bx-search-alt-2 lupa'></i>
-    </div>
-  </header>
-
-  <section>
-    <div class="divAnteriorSeguent">
-      <div class="pokedexAnterior"><p>#005 Charmeleon</p></div>
-      <div class="pokedexSeguent"><p>#007 Squirtle</p></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="base">
-      <div class="estructPrincipal">
-        <div class="fonsImg">
-          <img src="https://img.pokemondb.net/sprites/black-white/normal/charizard.png" alt="Charizard">
-        </div>
-        <div class="tiposGenere">
-          <p>Tipo: </p>
-          <div class="tipos">
-            <div class="recuadreTipo" id="recuadreFuego"><p>Fuego</p></div>
-            <div class="recuadreTipo" id="recuadreVolador"><p>Volador</p></div>
-          </div>
-          <div class="genereShiny">
-            <div class="centreGenere">
-              <div class="genereHome">
-                <input type="radio" name="homeDona" class="signeHome" id="signeHome" value="home">
-                <label for="home"><i class='bx bx-md bx-male-sign'></i></label>
-              </div>
-              <div class="genereDona">
-                <input type="radio" name="homeDona" class="signeDona" id="signeDona" value="dona">
-                <label for="dona"><i class='bx bx-md bx-female-sign'></i></label>
-              </div>
-            </div>
-            <div class="shiny">
-              <input type="checkbox" id="booleanShiny" class="booleanShiny" name="booleanShiny">
-              <p>Shiny</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="fonsStats centStatsPkmn">
-            <table>
-              <tbody>
-                <tr>
-                  <td class="nomStat">PS: </td>
-                  <td>60</td>
-                  <td><div id="barraBasePS"><div id="barraStatPS"></div></div></td>
-                </tr>
-                <tr>
-                  <td class="nomStat">Atac: </td>
-                  <td>55</td>
-                  <td><div id="barraBaseAtac"><div id="barraStatAtac"></div></div></td>
-                </tr>
-                <tr>
-                  <td class="nomStat">Defensa: </td>
-                  <td>25</td>
-                  <td><div id="barraBaseDefensa"><div id="barraStatDefensa"></div></div></td>
-                </tr>
-                <tr>
-                  <td class="nomStat">At.Especial: </td>
-                  <td>155</td>
-                  <td><div id="barraBaseAtEspecial"><div id="barraStatAtEspecial"></div></div></td>
-                </tr>
-                <tr>
-                  <td class="nomStat">Def.Especial: </td>
-                  <td>45</td>
-                  <td><div id="barraBaseDefEspecial"><div id="barraStatDefEspecial"></div></div></td>
-                </tr>
-                <tr>
-                  <td class="nomStat">Velocitat: </td>
-                  <td>115</td>
-                  <td><div id="barraBaseVelocitat"><div id="barraStatVelocitat"></div></div></td>
-                </tr>
-                <tr>
-                  <td class="nomStat">Total: </td>
-                  <td>445</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+  <div class="cont_blanc">
+    <header>
+      <h1>Estadística Pokemon</h1>
+      <div class="divBuscador">
+        <input type="text" placeholder="Cerca..." class="buscador">
+        <i class='bx bx-search-alt-2 lupa'></i>
       </div>
-      <div class="estructSecundari">
-        <div class="atrPkmn">
-          <h2>Charizard</h2>
-          <h3>Num. 006</h3>
-          <div class="divAtributs">
-            <div>
-              <p>Pes: </p>
-              <p>90,5 KG</p>
+    </header>
+  
+    <section>
+      <div class="divAnteriorSeguent">
+        <div class="pokedexAnterior"><p>#005 Charmeleon</p></div>
+        <div class="pokedexSeguent"><p>#007 Squirtle</p></div>
+      </div>
+    </section>
+  
+    <section>
+      <div class="base">
+        <div class="estructPrincipal">
+          <div class="fonsImg">
+            <img src="https://img.pokemondb.net/sprites/black-white/normal/charizard.png" alt="Charizard">
+          </div>
+          <div class="tiposGenere">
+            <p>Tipo: </p>
+            <div class="tipos">
+              <div class="recuadreTipo" id="recuadreFuego"><p>Fuego</p></div>
+              <div class="recuadreTipo" id="recuadreVolador"><p>Volador</p></div>
             </div>
-            <div>
-              <p>Altura: </p>
-              <p>1,7 M</p>
+            <div class="genereShiny">
+              <div class="centreGenere">
+                <div class="genereHome">
+                  <input type="radio" name="homeDona" class="signeHome" id="signeHome" value="home">
+                  <label for="home"><i class='bx bx-md bx-male-sign'></i></label>
+                </div>
+                <div class="genereDona">
+                  <input type="radio" name="homeDona" class="signeDona" id="signeDona" value="dona">
+                  <label for="dona"><i class='bx bx-md bx-female-sign'></i></label>
+                </div>
+              </div>
+              <div class="shiny">
+                <input type="checkbox" id="booleanShiny" class="booleanShiny" name="booleanShiny">
+                <p>Shiny</p>
+              </div>
             </div>
-            <div>
-              <p>Sexo: </p>
+          </div>
+          <div>
+            <div class="fonsStats centStatsPkmn">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="nomStat">PS: </td>
+                    <td>60</td>
+                    <td><div id="barraBasePS"><div id="barraStatPS"></div></div></td>
+                  </tr>
+                  <tr>
+                    <td class="nomStat">Atac: </td>
+                    <td>55</td>
+                    <td><div id="barraBaseAtac"><div id="barraStatAtac"></div></div></td>
+                  </tr>
+                  <tr>
+                    <td class="nomStat">Defensa: </td>
+                    <td>25</td>
+                    <td><div id="barraBaseDefensa"><div id="barraStatDefensa"></div></div></td>
+                  </tr>
+                  <tr>
+                    <td class="nomStat">At.Especial: </td>
+                    <td>155</td>
+                    <td><div id="barraBaseAtEspecial"><div id="barraStatAtEspecial"></div></div></td>
+                  </tr>
+                  <tr>
+                    <td class="nomStat">Def.Especial: </td>
+                    <td>45</td>
+                    <td><div id="barraBaseDefEspecial"><div id="barraStatDefEspecial"></div></div></td>
+                  </tr>
+                  <tr>
+                    <td class="nomStat">Velocitat: </td>
+                    <td>115</td>
+                    <td><div id="barraBaseVelocitat"><div id="barraStatVelocitat"></div></div></td>
+                  </tr>
+                  <tr>
+                    <td class="nomStat">Total: </td>
+                    <td>445</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="estructSecundari">
+          <div class="atrPkmn">
+            <h2>Charizard</h2>
+            <h3>Num. 006</h3>
+            <div class="divAtributs">
               <div>
-                <i class='bx bx-md bx-male-sign'></i>
-                <i class='bx bx-md bx-female-sign'></i>
+                <p>Pes: </p>
+                <p>90,5 KG</p>
+              </div>
+              <div>
+                <p>Altura: </p>
+                <p>1,7 M</p>
+              </div>
+              <div>
+                <p>Sexo: </p>
+                <div>
+                  <i class='bx bx-md bx-male-sign'></i>
+                  <i class='bx bx-md bx-female-sign'></i>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="efectiuTipos">
-          <div class="fonsEfectiu">
-            <div>
-              <p>Debil x2:</p>
-              <div class="x2">
-                <div class="recuadreTipo" id="recuadreAgua"><p>Agua</p></div>
-                <div class="recuadreTipo" id="recuadreElectrico"><p>Eléctrico</p></div>
+          <div class="efectiuTipos">
+            <div class="fonsEfectiu">
+              <div>
+                <p>Debil x2:</p>
+                <div class="x2">
+                  <div class="recuadreTipo" id="recuadreAgua"><p>Agua</p></div>
+                  <div class="recuadreTipo" id="recuadreElectrico"><p>Eléctrico</p></div>
+                </div>
               </div>
-            </div>
-            <div>
-              <p>Debil x4:</p>
-              <div class="x4">
-                <div class="recuadreTipo" id="recuadreRoca"><p>Roca</p></div>
+              <div>
+                <p>Debil x4:</p>
+                <div class="x4">
+                  <div class="recuadreTipo" id="recuadreRoca"><p>Roca</p></div>
+                </div>
               </div>
-            </div>
-            <div>
-              <p>Resistent 1/2:</p>
-              <div class="entre2">
-                <div class="recuadreTipo" id="recuadreFuego"><p>Fuego</p></div>
-                <div class="recuadreTipo" id="recuadreLucha"><p>Lucha</p></div>
+              <div>
+                <p>Resistent 1/2:</p>
+                <div class="entre2">
+                  <div class="recuadreTipo" id="recuadreFuego"><p>Fuego</p></div>
+                  <div class="recuadreTipo" id="recuadreLucha"><p>Lucha</p></div>
+                </div>
               </div>
-            </div>
-            <div>
-              <p>Resistent 1/4:</p>
-              <div class="entre4">
-                <div class="recuadreTipo" id="recuadreBicho"><p>Bicho</p></div>
-                <div class="recuadreTipo" id="recuadrePlanta"><p>Planta</p></div>
+              <div>
+                <p>Resistent 1/4:</p>
+                <div class="entre4">
+                  <div class="recuadreTipo" id="recuadreBicho"><p>Bicho</p></div>
+                  <div class="recuadreTipo" id="recuadrePlanta"><p>Planta</p></div>
+                </div>
               </div>
-            </div>
-            <div>
-              <p>Inmune:</p>
-              <div class="inmune">
-                <div class="recuadreTipo" id="recuadreTierra"><p>Tierra</p></div>
+              <div>
+                <p>Inmune:</p>
+                <div class="inmune">
+                  <div class="recuadreTipo" id="recuadreTierra"><p>Tierra</p></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <footer>
             <div class="menuFooter">

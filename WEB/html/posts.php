@@ -13,7 +13,7 @@
     <nav>
         <div class="logoMenu">
             <a href="index.php">
-                <img src="../../IMG/logo.png" class="logoMenu" alt="logo pagina i link al Menu">
+                <img src="../../IMG/logo.png" class="logo" alt="logo pagina i link al Menu">
             </a>
             <div class="menu" id="menu">
                 <ul class="llistaMenu">
@@ -54,103 +54,105 @@
         </div>
     </nav>
 
-  <header>
-    <h1>Trainer's Teams</h1>
-    <div class="divBuscador">
-      <input type="text" placeholder="Cerca..." class="buscador">
-      <i class='bx bx-search-alt-2 lupa'></i>
-    </div>
-  </header>
-
-  <section>
-    <div class="posts">
-      <div class="post" id="post1">
-        <div class="titolPost">
-          <h2>Post 1</h2>
-          <div class="UserPost">
-            <img src="../../IMG/Pokemons/075.png" alt="">
-            <h3>Kento27</h3>
-          </div>
-        </div>
-        <div class="equipDescripcioPost">
-          <div class="equipPost">
-            <div class="titolEquipDetalls">
-              <h3>Primer equip</h3>
-              <a href="mesDetalls.html">+ DETALLS</a>
-            </div>
-            <div class="equipUserPost">
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/034.png" alt=""></div>
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/091.png" alt=""></div>
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/051.png" alt=""></div>
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/038Shiny.png" alt=""></div>
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/036.png" alt=""></div>
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/054Shiny.png" alt=""></div>
+  <div class="cont_blanc">
+    <header>
+      <h1>Trainer's Teams</h1>
+      <div class="divBuscador">
+        <input type="text" placeholder="Cerca..." class="buscador">
+        <i class='bx bx-search-alt-2 lupa'></i>
+      </div>
+    </header>
+  
+    <section>
+      <div class="posts">
+        <div class="post" id="post1">
+          <div class="titolPost">
+            <h2>Post 1</h2>
+            <div class="UserPost">
+              <img src="../../IMG/Pokemons/075.png" alt="">
+              <h3>Kento27</h3>
             </div>
           </div>
-          <div class="descripcioPost">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus excepturi ad eaque culpa! Quas praesentium beatae pariatur quisquam unde voluptates rerum quos enim quia officiis, laborum commodi delectus, possimus odit.</p>
+          <div class="equipDescripcioPost">
+            <div class="equipPost">
+              <div class="titolEquipDetalls">
+                <h3>Primer equip</h3>
+                <a href="mesDetalls.html">+ DETALLS</a>
+              </div>
+              <div class="equipUserPost">
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/034.png" alt=""></div>
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/091.png" alt=""></div>
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/051.png" alt=""></div>
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/038Shiny.png" alt=""></div>
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/036.png" alt=""></div>
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/054Shiny.png" alt=""></div>
+              </div>
+            </div>
+            <div class="descripcioPost">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus excepturi ad eaque culpa! Quas praesentium beatae pariatur quisquam unde voluptates rerum quos enim quia officiis, laborum commodi delectus, possimus odit.</p>
+            </div>
+          </div>
+          <div class="divButons">
+            <div class="compartir">
+              <p>3</p>
+              <i class='bx bx-sm  bx-share'  style='color:#000000'></i> 
+            </div>
+            <div class="like">
+              <p>123</p>
+              <i class='bx bx-sm  bx-heart'  style='color:#f32b2b'></i> 
+            </div>
+            <div class="descarrega">
+              <p>6</p>
+              <i class='bx bx-sm bx-download' style='color:#000000'></i> 
+            </div>
           </div>
         </div>
-        <div class="divButons">
-          <div class="compartir">
-            <p>3</p>
-            <i class='bx bx-sm  bx-share'  style='color:#000000'></i> 
+  
+        <div class="post" id="post2">
+          <div class="titolPost">
+            <h2>Post 1</h2>
+            <div class="UserPost">
+              <img src="../../IMG/Pokemons/075.png" alt="">
+              <h3>Kento27</h3>
+            </div>
           </div>
-          <div class="like">
-            <p>123</p>
-            <i class='bx bx-sm  bx-heart'  style='color:#f32b2b'></i> 
+          <div class="equipDescripcioPost">
+            <div class="equipPost">
+              <div class="titolEquipDetalls">
+                <h3>Primer equip</h3>
+                <a href="mesDetalls.html">+ DETALLS</a>
+              </div>
+              <div class="equipUserPost">
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/034.png" alt=""></div>
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/091.png" alt=""></div>
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/051.png" alt=""></div>
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/038Shiny.png" alt=""></div>
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/036.png" alt=""></div>
+                <div class="pokemonsPost"><img src="../../IMG/Pokemons/054Shiny.png" alt=""></div>
+              </div>
+            </div>
+            <div class="descripcioPost">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus excepturi ad eaque culpa! Quas praesentium beatae pariatur quisquam unde voluptates rerum quos enim quia officiis, laborum commodi delectus, possimus odit.</p>
+            </div>
           </div>
-          <div class="descarrega">
-            <p>6</p>
-            <i class='bx bx-sm bx-download' style='color:#000000'></i> 
+          <div class="divButons">
+            <div class="compartir">
+              <p>3</p>
+              <i class='bx bx-sm  bxs-share-alt'  style='color:#000000'></i> 
+            </div>
+            <div class="like">
+              <p>123</p>
+              <i class='bx bx-sm  bx-heart'  style='color:#f32b2b'></i> 
+            </div>
+            <div class="descarrega">
+              <p>6</p>
+              <i class='bx bx-sm bx-download' style='color:#000000'></i> 
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="post" id="post2">
-        <div class="titolPost">
-          <h2>Post 1</h2>
-          <div class="UserPost">
-            <img src="../../IMG/Pokemons/075.png" alt="">
-            <h3>Kento27</h3>
-          </div>
-        </div>
-        <div class="equipDescripcioPost">
-          <div class="equipPost">
-            <div class="titolEquipDetalls">
-              <h3>Primer equip</h3>
-              <a href="mesDetalls.html">+ DETALLS</a>
-            </div>
-            <div class="equipUserPost">
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/034.png" alt=""></div>
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/091.png" alt=""></div>
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/051.png" alt=""></div>
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/038Shiny.png" alt=""></div>
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/036.png" alt=""></div>
-              <div class="pokemonsPost"><img src="../../IMG/Pokemons/054Shiny.png" alt=""></div>
-            </div>
-          </div>
-          <div class="descripcioPost">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus excepturi ad eaque culpa! Quas praesentium beatae pariatur quisquam unde voluptates rerum quos enim quia officiis, laborum commodi delectus, possimus odit.</p>
-          </div>
-        </div>
-        <div class="divButons">
-          <div class="compartir">
-            <p>3</p>
-            <i class='bx bx-sm  bxs-share-alt'  style='color:#000000'></i> 
-          </div>
-          <div class="like">
-            <p>123</p>
-            <i class='bx bx-sm  bx-heart'  style='color:#f32b2b'></i> 
-          </div>
-          <div class="descarrega">
-            <p>6</p>
-            <i class='bx bx-sm bx-download' style='color:#000000'></i> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
     <footer>
             <div class="menuFooter">

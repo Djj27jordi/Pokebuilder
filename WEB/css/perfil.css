@@ -3,9 +3,63 @@ html, body{
   padding: 0px;
 }
 
+/* FONS */ 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  background: linear-gradient(
+    135deg,
+    #242424 25%,
+    #2b2b2b 25%,
+    #2b2b2b 50%,
+    #242424 50%,
+    #242424 75%,
+    #2b2b2b 75%,
+    #2b2b2b
+  );
+  background-size: 40px 40px;
+
+  animation: move 30s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 500px 500px;
+  }
+}
+
+.cont_blanc{
+  background-color:white;
+  border-radius: 10px;
+  max-width: 1400px;
+  width: 100%;
+  padding: 100px 0px;
+}
+
 /* body */
 h1{
-  font-size: 2em;
+  font-size: 2.5em;
+  font-family: 'Tomorrow';
+}
+
+h2{
+  font-size: 1.8em;
+  font-family: 'Tomorrow';
+}
+
+h3{
+  font-size: 1.3em;
+  font-family: 'Tomorrow';
+}
+
+p, textarea{
+  font-family: 'Roboto Mono';
 }
 
 .estruct{

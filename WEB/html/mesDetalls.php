@@ -54,161 +54,163 @@
         </div>
     </nav>
   
-  <section class="sectDesc">
-    <div class="fons1 divDescripcio">
-      <div class="descripcioEquip">
-        <div>
-          <h2>Descripció Equip</h2>
-          <p>Explica la principal estrategia pensada per aquest equip</p>
+  <div class="cont_blanc">
+    <section class="sectDesc">
+      <div class="fons1 divDescripcio">
+        <div class="descripcioEquip">
+          <div>
+            <h2>Descripció Equip</h2>
+            <p>Explica la principal estrategia pensada per aquest equip</p>
+          </div>
+          <div class="detallEquipDe">
+            <img src="https://img.pokemondb.net/sprites/black-white/normal/primeape.png" alt="Primeape">
+            <p>Kento27</p>
+          </div>
         </div>
-        <div class="detallEquipDe">
-          <img src="https://img.pokemondb.net/sprites/black-white/normal/primeape.png" alt="Primeape">
-          <p>Kento27</p>
-        </div>
+        <textarea name="estrategia" id="estrategia" class="estrategia" placeholder="" disabled></textarea>
       </div>
-      <textarea name="estrategia" id="estrategia" class="estrategia" placeholder="" disabled></textarea>
-    </div>
-  </section>
-
-  <section class="pokemonsSel">
-    <div class="seleccioPokemon">
-      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon1" alt="">
-      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon2" alt="">
-      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon3" alt="">
-      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon4" alt="">
-      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon5" alt="">
-      <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon6" alt="">
-    </div>
-  </section>
-
-  <section>
-    <div class="dadesPokemon">
-      <div class="fons1">
-        <div class="fons2 centSelPkmn">
-          <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" id="pokemonSel" class="pokemonSel" alt="">
-        </div>
+    </section>
+  
+    <section class="pokemonsSel">
+      <div class="seleccioPokemon">
+        <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon1" alt="">
+        <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon2" alt="">
+        <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon3" alt="">
+        <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon4" alt="">
+        <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon5" alt="">
+        <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" class="equipPokemon" id="pokemon6" alt="">
       </div>
-      <div class="fons1">
-        <div class="fons2Stats centStatsPkmn">
+    </section>
+  
+    <section>
+      <div class="dadesPokemon">
+        <div class="fons1">
+          <div class="fons2 centSelPkmn">
+            <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" id="pokemonSel" class="pokemonSel" alt="">
+          </div>
+        </div>
+        <div class="fons1">
+          <div class="fons2Stats centStatsPkmn">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="nomStat">PS: </td>
+                  <td>60</td>
+                  <td><div id="barraBasePS"><div id="barraStatPS"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">Atac: </td>
+                  <td>55</td>
+                  <td><div id="barraBaseAtac"><div id="barraStatAtac"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">Defensa: </td>
+                  <td>25</td>
+                  <td><div id="barraBaseDefensa"><div id="barraStatDefensa"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">At.Especial: </td>
+                  <td>155</td>
+                  <td><div id="barraBaseAtEspecial"><div id="barraStatAtEspecial"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">Def.Especial: </td>
+                  <td>45</td>
+                  <td><div id="barraBaseDefEspecial"><div id="barraStatDefEspecial"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">Velocitat: </td>
+                  <td>115</td>
+                  <td><div id="barraBaseVelocitat"><div id="barraStatVelocitat"></div></div></td>
+                </tr>
+                <tr>
+                  <td class="nomStat">Total: </td>
+                  <td>445</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="fons1">
+          <h2>IV i EV</h2>
           <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>IV</th>
+                <th>EV</th>
+              </tr>
+            </thead>
             <tbody>
               <tr>
                 <td class="nomStat">PS: </td>
-                <td>60</td>
-                <td><div id="barraBasePS"><div id="barraStatPS"></div></div></td>
+                <td><input type="number" id="IvPS" class="IvPS" max="31" disabled></td>
+                <td><input type="number" id="EvPS" class="EvPS" max="252" disabled></td>
               </tr>
               <tr>
                 <td class="nomStat">Atac: </td>
-                <td>55</td>
-                <td><div id="barraBaseAtac"><div id="barraStatAtac"></div></div></td>
+                <td><input type="number" id="IvAtac" class="IvAtac" max="31" disabled></td>
+                <td><input type="number" id="EvAtac" class="EvAtac" max="252" disabled></td>
               </tr>
               <tr>
                 <td class="nomStat">Defensa: </td>
-                <td>25</td>
-                <td><div id="barraBaseDefensa"><div id="barraStatDefensa"></div></div></td>
+                <td><input type="number" id="IvDefensa" class="IvDefensa" max="31" disabled></td>
+                <td><input type="number" id="EvDefensa" class="EvDefensa" max="252" disabled></td>
               </tr>
               <tr>
                 <td class="nomStat">At.Especial: </td>
-                <td>155</td>
-                <td><div id="barraBaseAtEspecial"><div id="barraStatAtEspecial"></div></div></td>
+                <td><input type="number" id="IvAtEspecial" class="IvAtEspecial" max="31" disabled></td>
+                <td><input type="number" id="EvAtEspecial" class="EvAtEspecial" max="252" disabled></td>
               </tr>
               <tr>
                 <td class="nomStat">Def.Especial: </td>
-                <td>45</td>
-                <td><div id="barraBaseDefEspecial"><div id="barraStatDefEspecial"></div></div></td>
+                <td><input type="number" id="IvDefEspecial" class="IvDefEspecial" max="31" disabled></td>
+                <td><input type="number" id="EvDefEspecial" class="EvDefEspecial" max="252" disabled></td>
               </tr>
               <tr>
                 <td class="nomStat">Velocitat: </td>
-                <td>115</td>
-                <td><div id="barraBaseVelocitat"><div id="barraStatVelocitat"></div></div></td>
-              </tr>
-              <tr>
-                <td class="nomStat">Total: </td>
-                <td>445</td>
-                <td></td>
+                <td><input type="number" id="IvVelocitat" class="IvVelocitat" max="31" disabled></td>
+                <td><input type="number" id="EvVelocitat" class="EvVelocitat" max="252" disabled></td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
-      <div class="fons1">
-        <h2>IV i EV</h2>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>IV</th>
-              <th>EV</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="nomStat">PS: </td>
-              <td><input type="number" id="IvPS" class="IvPS" max="31" disabled></td>
-              <td><input type="number" id="EvPS" class="EvPS" max="252" disabled></td>
-            </tr>
-            <tr>
-              <td class="nomStat">Atac: </td>
-              <td><input type="number" id="IvAtac" class="IvAtac" max="31" disabled></td>
-              <td><input type="number" id="EvAtac" class="EvAtac" max="252" disabled></td>
-            </tr>
-            <tr>
-              <td class="nomStat">Defensa: </td>
-              <td><input type="number" id="IvDefensa" class="IvDefensa" max="31" disabled></td>
-              <td><input type="number" id="EvDefensa" class="EvDefensa" max="252" disabled></td>
-            </tr>
-            <tr>
-              <td class="nomStat">At.Especial: </td>
-              <td><input type="number" id="IvAtEspecial" class="IvAtEspecial" max="31" disabled></td>
-              <td><input type="number" id="EvAtEspecial" class="EvAtEspecial" max="252" disabled></td>
-            </tr>
-            <tr>
-              <td class="nomStat">Def.Especial: </td>
-              <td><input type="number" id="IvDefEspecial" class="IvDefEspecial" max="31" disabled></td>
-              <td><input type="number" id="EvDefEspecial" class="EvDefEspecial" max="252" disabled></td>
-            </tr>
-            <tr>
-              <td class="nomStat">Velocitat: </td>
-              <td><input type="number" id="IvVelocitat" class="IvVelocitat" max="31" disabled></td>
-              <td><input type="number" id="EvVelocitat" class="EvVelocitat" max="252" disabled></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="fons1">
-        <div class="genere">
-          <h2>Genere</h2>
-          <div class="centreGenere">
-            <div class="genereHome">
-              <input type="radio" name="homeDona" class="signeHome" id="signeHome" value="home" disabled>
-              <label for="home"><i class='bx bx-md bx-male-sign'></i></label>
+        <div class="fons1">
+          <div class="genere">
+            <h2>Genere</h2>
+            <div class="centreGenere">
+              <div class="genereHome">
+                <input type="radio" name="homeDona" class="signeHome" id="signeHome" value="home" disabled>
+                <label for="home"><i class='bx bx-md bx-male-sign'></i></label>
+              </div>
+              <div class="genereDona">
+                <input type="radio" name="homeDona" class="signeDona" id="signeDona" value="dona" disabled>
+                <label for="dona"><i class='bx bx-md bx-female-sign'></i></label>
+              </div>
             </div>
-            <div class="genereDona">
-              <input type="radio" name="homeDona" class="signeDona" id="signeDona" value="dona" disabled>
-              <label for="dona"><i class='bx bx-md bx-female-sign'></i></label>
+          </div>
+          <div>
+            <h2>Moviments</h2>
+            <div class="selMove">
+              <select name="move1" id="move1" class="move1" required disabled>
+                <option value="" selected disabled>Moviment 1</option>
+              </select>
+              <select name="move2" id="move2" class="move2" required disabled>
+                <option value="" selected disabled>Moviment 2</option>
+              </select>
+              <select name="move3" id="move3" class="move3" required disabled>
+                <option value="" selected disabled>Moviment 3</option>
+              </select>
+              <select name="move4" id="move4" class="move4" required disabled>
+                <option value="" selected disabled>Moviment 4</option>
+              </select>
             </div>
           </div>
         </div>
-        <div>
-          <h2>Moviments</h2>
-          <div class="selMove">
-            <select name="move1" id="move1" class="move1" required disabled>
-              <option value="" selected disabled>Moviment 1</option>
-            </select>
-            <select name="move2" id="move2" class="move2" required disabled>
-              <option value="" selected disabled>Moviment 2</option>
-            </select>
-            <select name="move3" id="move3" class="move3" required disabled>
-              <option value="" selected disabled>Moviment 3</option>
-            </select>
-            <select name="move4" id="move4" class="move4" required disabled>
-              <option value="" selected disabled>Moviment 4</option>
-            </select>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <footer>
             <div class="menuFooter">
