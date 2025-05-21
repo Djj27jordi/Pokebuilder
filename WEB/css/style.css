@@ -9,10 +9,10 @@ body{
     align-items: center;
     overflow-x: hidden;
     background-image: url(../../IMG/pokeball.jpg);
-    background-size: cover;
+    background-size: 100%;     
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-position: 0 0;
+    background-attachment: fixed;  
     font-family: 'roboto mono';
 }
 
@@ -35,9 +35,10 @@ h1, h2, h3{
 /* SECCIO HIGHLIGHTS */
 section{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    width: 100%;
     margin-bottom: 330px;
 }
 
@@ -50,7 +51,7 @@ section{
 .pokebuilder h1 {
     font-size: 5rem;
     color: var(--normal);
-    animation: rotacioColors 90s infinite linear;
+    animation: rotacioColors 30s infinite linear;
     text-shadow: 0px 0px 10px rgba(var(--normal-rgb), 0.5);
 }
   /* ANIMACIO */
@@ -93,7 +94,7 @@ section{
 .titolcaixa h2{
     font-size: 1.8rem;
 }
-    
+
 .highlight1 {
     grid-row: span 3 / span 3;
     background-color: rgba(var(--agua-rgb), 0.85);
@@ -158,12 +159,6 @@ section{
         box-shadow 0.3s ease-in-out;
 }
 
-/* .highlight3 .usuaripost a{
-    width: 240px;
-    height: 60px;
-    border-radius: 500px;
-} */
-
 .highlight4 {
     grid-row: span 5 / span 5;
     grid-column-start: 3;
@@ -204,6 +199,7 @@ section{
 }
 
 .usuaripost{
+    width: 50%; 
     display: flex; 
     flex-direction: row; 
     justify-content: space-around; 
@@ -222,7 +218,6 @@ section{
     justify-content: center; 
     align-items: center;
 }
-
 
 .usuaripost img{
     height: 60px;
@@ -291,23 +286,7 @@ section{
 
 
 /* --------------------------------------- */
-.posts{
-    display: flex;
-    gap: 20px;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
 
-.post1{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: start;
-}
-
-
-/* ---------------------------------------- */
 
 .highlight4{
     display: flex;
@@ -450,7 +429,7 @@ section{
     justify-content: start;
     align-items: center;
     background-color: rgba(var(--fuego-rgb), 0.85);
-    padding: 15px 0px;
+    padding: 1rem;
     border-radius: 30px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease-in-out, 
@@ -513,6 +492,26 @@ section{
 .imglateral img, .imgcentre img{
     height: 100%;
 }
+
+.fblanc{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 5rem; 
+    background-color: white; 
+    border-radius: 10px; 
+    padding: 5rem; 
+    box-shadow: inset 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cuntanidorimgs{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    gap: 5rem;
+}
+
 /* ---------------------------------- */
 /* SECCIO PREMIUM */
 .contingut_premium{
@@ -521,9 +520,10 @@ section{
     padding: 2rem; 
     border-radius: 30px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: transform 0.3s ease-in-out, 
-    background-color 0.3s ease-in-out, 
-    box-shadow 0.3s ease-in-out;
+    transition: 
+        transform 0.3s ease-in-out, 
+        background-color 0.3s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 .contingut_premium:hover{
@@ -562,6 +562,7 @@ section{
     height: 100%;
 }
 
+
 .text_premium{
     width: 50%;
 }
@@ -572,8 +573,18 @@ section{
 
 /* ------------------------------------------ */
 /* SECCIO POSTS */
+.posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-bottom: 300px;
+}
+
 .posts_cont{
-    width: 300px;
+    width: 450px;
     background-color: rgba(var(--electrico-rgb), 0.85);
     display: flex;
     flex-direction: column;
@@ -586,6 +597,18 @@ section{
     transition: transform 0.3s ease-in-out, 
     background-color 0.3s ease-in-out, 
     box-shadow 0.3s ease-in-out;
+}
+
+.nosequeposarlideclase{
+    background-color: rgba(var(--electrico-rgb), 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 2rem;
+    border-radius: 30px;
+    width: 100%;
 }
 
 .posts_cont:hover{
@@ -609,7 +632,6 @@ section{
     margin-top: 24px;
 }
 
-
 /* ------------------------------------ */
 /* SECCIO UNEIXTE */
 .uneixte{
@@ -628,7 +650,6 @@ section{
     border-radius: 30px;
     text-align: center;
     font-size: 1.3rem;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease-in-out, 
     background-color 0.3s ease-in-out, 
     box-shadow 0.3s ease-in-out;
@@ -779,21 +800,3 @@ section{
 }
 
 
-.fblanc{
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background-color: white; 
-    border-radius: 10px; 
-    padding: 5rem; 
-    gap: 100px;
-    box-shadow: inset 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.cuntanidorimgs{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100%;
-    gap: 5rem;
-}

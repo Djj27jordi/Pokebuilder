@@ -36,26 +36,26 @@ nav{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: var(--dark);
+    border: 1px solid rgba(var(--dark-bg), 1);
     padding: 0.5rem 0;
     z-index: 1;
-    color: black;
   
     /* poso que cada 8 files en la columna es posi lo demes en unaltre columna */
     grid-template-columns: repeat(2, max-content);
-    /* gap: 0.5rem 2rem; */
   }
+  
 
   .menuDropdown a{
-    color: black;
+    color: white;
   }
 
   .menuDropdown a:hover{
-    color: black;
-    background-color: #cccccc;
+    color: white;
+    background-color: rgb(69, 69, 69);
   }
   
+
   li{
     padding: 10px 15px 10px 15px;
   }
@@ -88,6 +88,16 @@ nav{
     gap: 10px;
   }
 
+  .fotoUser{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+  }
+
+  .fotoUser img{
+    height: 110%;
+  }
   
 /* FOOTER */
 
@@ -140,10 +150,10 @@ footer{
   }
   
   .formulariFoter input, .formulariFoter textarea{
-    padding: 10px;
     width: 100%;
     border: 1px solid white;
     border-radius: 5px;
+    padding: 10px;
   }
   
   .formulariFoter textarea{

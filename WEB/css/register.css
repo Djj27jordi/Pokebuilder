@@ -2,14 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-  }
+    }
   
   html, body {
     height: 100%;
     overflow: hidden;
     position: relative;
-  }
+    font-family: 'roboto mono';
+}
+
+h1, h2, h3{
+    font-family: 'Tomorrow';
+}
   
   /* Fons amb imatge */
   .background-image {
@@ -48,15 +52,6 @@
   header {
     position: relative;
     z-index: 2;
-    /* height: 5%;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3% 5%;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    font-size: 1.2rem; */
   }
 
   /* Login */
@@ -113,6 +108,8 @@
     border-radius: 10px;
     font-size: 1em;
     cursor: pointer;
+    font-family: 'roboto mono';
+    font-weight: bold;
   }
   
   .login-box button:hover {

@@ -1,9 +1,15 @@
+<?php
+session_start();
+// echo($_SESSION['imatge']);
+?>
+
 <!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="../../IMG/logo.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/colors.css">
     <link rel="stylesheet" href="../css/nav_i_footer.css">
@@ -12,81 +18,45 @@
 <body>
     <nav>
         <div class="logoMenu">
-            <img src="../../IMG/logo.png" class="logoMenu" alt="logoMenu">
+            <a href="index.php">
+                <img src="../../IMG/logo.png" class="logoMenu" alt="logo pagina i link al Menu">
+            </a>
             <div class="menu" id="menu">
                 <ul class="llistaMenu">
-                <a href="index.html"><li>Inici</li></a>
-                <li class="dropdown"><a href="pokedex.html">Pokedex</a>
-                    <ul class="menuDropdown">
-                        <a href="pokedex.html">
-                            <li>Normal</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Planta</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Fuego</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Agua</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Lucha</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Bicho</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Veneno</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Psiquico</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Fantasma</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Eléctico</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Hielo</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Dragon</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Roca</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Tierra</li>
-                        </a>
-                        <a href="pokedex.html">
-                            <li>Volador</li>
-                        </a>
-                    </ul>
-                </li>
-            <a href="builder.html">
-                <li>Builder</li>
-            </a>
-            <a href="posts.html">
-                <li>Publicacions</li>
-            </a>
-            <a href="preguntesfrq.html">
-                <li>Preguntes frequents</li>
-            </a>
-            <a href="nosaltres.html">
-                <li>Qui som?</li>
-            </a>
-            </ul>
+                    <li><a href="index.php">Inici</a></li>
+                    <li class="dropdown"><a href="pokedex.php">Pokedex</a>
+                        <ul class="menuDropdown">
+                            <li><a href="pokedex.php">Normal</a></li>
+                            <li><a href="pokedex.php">Planta</a></li>
+                            <li><a href="pokedex.php">Fuego</a></li>
+                            <li><a href="pokedex.php">Agua</a></li>
+                            <li><a href="pokedex.php">Lucha</a></li>
+                            <li><a href="pokedex.php">Bicho</a></li>
+                            <li><a href="pokedex.php">Veneno</a></li>
+                            <li><a href="pokedex.php">Psiquico</a></li>
+                            <li><a href="pokedex.php">Fantasma</a></li>
+                            <li><a href="pokedex.php">Eléctico</a></li>
+                            <li><a href="pokedex.php">Hielo</a></li>
+                            <li><a href="pokedex.php">Dragon</a></li>
+                            <li><a href="pokedex.php">Roca</a></li>
+                            <li><a href="pokedex.php">Tierra</a></li>
+                            <li><a href="pokedex.php">Volador</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="builder.php">Builder</a></li>
+                    <li><a href="posts.php">Publicacions</a></li>
+                    <li><a href="preguntesfrq.php">Preguntes frequents</a></li>
+                    <li><a href="nosaltres.php">Qui som?</a></li>
+                </ul>
             </div>
         </div>
         <div class="perfil" id="perfil">
-        <?php if (isset($_SESSION['usuari'])): ?>
-            <p><?= htmlspecialchars($_SESSION['usuari']) ?></p>
-            <img src="../../IMG/user.png" class="fotoUser" alt="foto del usuari">
-        <?php else: ?>
-            <a href="login.html">Inicia sessió</a>
-        <?php endif; ?>
+            <?php if (isset($_SESSION['apodo'])): ?>
+                <p><?= htmlspecialchars($_SESSION['apodo']) ?></p>
+                <img src="<?= htmlspecialchars($_SESSION['imatge']) ?>" class="fotoUser" alt="foto del usuari">
+            <?php else: ?>
+                <a href="login.php">Inicia sessió</a>
+            <?php endif; ?>
         </div>
     </nav>
 
@@ -455,12 +425,12 @@
             <div class="menuFooter">
               <h3>Menu Ràpid</h3>
               <ul>
-                <a href="index.html"></a><li>Inici</li></a>
-                <a href="pokedex.html"></a><li>Pokedex</li></a>
-                <a href="builder.html"><li>Builder</li></a>
-                <a href="posts.html"><li>Publicacions</li></a>
-                <a href="preguntesfrq.html"><li>Preguntes frequents</li></a>
-                <a href="nosaltres.html"><li>Qui som?</li></a>
+                <li><a href="index.php">Inici</a></li>
+                    <li><a href="pokedex.php">Pokedex</a></li>
+                    <li><a href="builder.php">Builder</a></li>
+                    <li><a href="posts.php">Publicacions</a></li>
+                    <li><a href="preguntesfrq.php">Preguntes frequents</a></li>
+                    <li><a href="nosaltres.php">Qui som?</a></li>
               </ul>
             </div>
             <div class="formulariFoter">
@@ -485,10 +455,10 @@
             <div class="contacteFooter">
               <h3>Contacten's</h3>
               <div class="divContacte">
-                <div class="contacte"><a href="#"><img src="../../IMG/contacte/insta.png" alt=""></a></div>
-                <div class="contacte"><a href="#"><img src="../../IMG/contacte/tiktok.png" alt=""></a></div>
-                <div class="contacte"><a href="#"><img src="../../IMG/contacte/discord.png" alt=""></a></div>
-                <div class="contacte"><a href="#"><img src="../../IMG/contacte/x.png" alt=""></a></div>
+                <div class="contacte"><a href="https://www.instagram.com"><img src="../../IMG/contacte/insta.png" alt=""></a></div>
+                <div class="contacte"><a href="https://www.tiktok.com/"><img src="../../IMG/contacte/tiktok.png" alt=""></a></div>
+                <div class="contacte"><a href="https://www.discord.com/"><img src="../../IMG/contacte/discord.png" alt=""></a></div>
+                <div class="contacte"><a href="https://www.x.com/"><img src="../../IMG/contacte/x.png" alt=""></a></div>
               </div>
             </div>
         </footer>
