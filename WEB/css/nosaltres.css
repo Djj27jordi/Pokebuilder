@@ -1,0 +1,33 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 100px;
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+h1, h2, h3{
+  font-family: 'Tomorrow';
+}
+
+p{
+  font-family: 'Roboto Mono';
+  font-size: 1.3rem;
+}
+
+header, section{
+  max-width: 1200px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
