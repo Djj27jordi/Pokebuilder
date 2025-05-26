@@ -1,3 +1,17 @@
+<?php
+require '../php/connexio.php';
+
+$linies = 20;
+
+if (isset($_REQUEST['paginacio']))
+    $inici = $_REQUEST['paginacio'];
+else
+    $inici = 0;
+
+$sql = "SELECT * FROM pokedex LIMIT $inici, $linies";
+$registres = $conn->query($sql);
+$impressos = 0;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,37 +67,54 @@
             <?php endif; ?>
         </div>
     </nav>
-  
+
   <div class="cont_blanc">
     <header>
       <h1>POKÉDEX</h1>
       <div class="divBuscador">
-        <input type="text" placeholder="Cerca..." class="buscador">
+        <input type="text" placeholder="Cerca..." class="buscador" id="buscador" oninput="buscadorPokedex()">
         <i class='bx bx-search-alt-2 lupa'></i>
       </div>
     </header>
   
     <section>
       <div class="divFiltro">
-        <div class="filtro" id="filtroNormal"><p>Normal</p></div>
-        <div class="filtro" id="filtroPlanta"><p>Planta</p></div>
-        <div class="filtro" id="filtroFuego"><p>Fuego</p></div>
-        <div class="filtro" id="filtroAgua"><p>Agua</p></div>
-        <div class="filtro" id="filtroLucha"><p>Lucha</p></div>
-        <div class="filtro" id="filtroBicho"><p>Bicho</p></div>
-        <div class="filtro" id="filtroVeneno"><p>Veneno</p></div>
-        <div class="filtro" id="filtroPsiquico"><p>Psiquico</p></div>
-        <div class="filtro" id="filtroFantasma"><p>Fantasma</p></div>
-        <div class="filtro" id="filtroElectrico"><p>Eléctrico</p></div>
-        <div class="filtro" id="filtroHielo"><p>Hielo</p></div>
-        <div class="filtro" id="filtroDragon"><p>Dragon</p></div>
-        <div class="filtro" id="filtroRoca"><p>Roca</p></div>
-        <div class="filtro" id="filtroTierra"><p>Tierra</p></div>
-        <div class="filtro" id="filtroVolador"><p>Volador</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Normal" id="filtroNormal"><p>Normal</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Planta" id="filtroPlanta"><p>Planta</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Fuego" id="filtroFuego"><p>Fuego</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Agua" id="filtroAgua"><p>Agua</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Lucha" id="filtroLucha"><p>Lucha</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Bicho" id="filtroBicho"><p>Bicho</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Veneno" id="filtroVeneno"><p>Veneno</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Psiquico" id="filtroPsiquico"><p>Psiquico</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Fantasma" id="filtroFantasma"><p>Fantasma</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Electrico" id="filtroElectrico"><p>Eléctrico</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Hielo" id="filtroHielo"><p>Hielo</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Dragon" id="filtroDragon"><p>Dragon</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Roca" id="filtroRoca"><p>Roca</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Tierra" id="filtroTierra"><p>Tierra</p></div>
+        <div class="filtro" data-filtre="false" data-nomF="Volador" id="filtroVolador"><p>Volador</p></div>
       </div>
     </section>
-  
+
     <section>
+      <div class="pokedex" id="pokedex">
+        <?php
+        while ($reg = $registres->fetch_array()) {
+          $impressos++;
+        ?>
+          <a href="pokedexDetall.php?id=<?php echo $reg['ID_pokedex']; ?>">
+            <div class="divPkmn">
+              <p>#<?php echo $reg['ID_pokedex']; ?></p>
+              <img src="<?php echo $reg['imatgeM']; ?>" alt="<?php echo $reg['nom']; ?>">
+              <p><?php echo $reg['nom']; ?></p>
+            </div>
+          </a>
+        <?php } ?>
+      </div>
+    </section>
+
+    <!-- <section>
       <div class="pokedex">
         <a href="pokedexDetall.php">
           <div class="divPkmn">
@@ -170,6 +201,24 @@
           </div>
         </a>
       </div>
+    </section> -->
+
+    <section>
+      <div class="paginacio">
+        <?php
+          if ($inici == 0) {
+              echo "";
+          }else {
+              $anterior = $inici - $linies;
+              echo "<a href=\"pokedex.php?paginacio=$anterior\" class=\"anterior\"><- Anterior</a> ";
+          }
+
+          if ($impressos == $linies) {
+              $proper = $inici + $linies;
+              echo "<a href=\"pokedex.php?paginacio=$proper\" class=\"seguent\">Següent -></a>";
+          }
+        ?>
+      </div>
     </section>
   </div>
 
@@ -178,11 +227,11 @@
               <h3>Menu Ràpid</h3>
               <ul>
                 <li><a href="index.php">Inici</a></li>
-                    <li><a href="pokedex.php">Pokedex</a></li>
-                    <li><a href="builder.php">Builder</a></li>
-                    <li><a href="posts.php">Publicacions</a></li>
-                    <li><a href="preguntesfrq.php">Preguntes frequents</a></li>
-                    <li><a href="nosaltres.php">Qui som?</a></li>
+                <li><a href="pokedex.php">Pokedex</a></li>
+                <li><a href="builder.php">Builder</a></li>
+                <li><a href="posts.php">Publicacions</a></li>
+                <li><a href="preguntesfrq.php">Preguntes frequents</a></li>
+                <li><a href="nosaltres.php">Qui som?</a></li>
               </ul>
             </div>
             <div class="formulariFoter">
@@ -214,5 +263,6 @@
               </div>
             </div>
         </footer>
+  <script src="../JavaScript/buscadorPokedex.js"></script>
 </body>
 </html>

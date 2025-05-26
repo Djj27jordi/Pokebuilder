@@ -60,19 +60,22 @@ session_start();
   <div class="cont_blanc">
     
     <h1>Team Builder</h1>
-    <!-- <section class="pokemonsSel">
-      <div class="seleccioPokemon">
-        <form action="" style="display: flex; flex-direction: row; gap: 10px;">
-          <div class="poke" style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
-            <span class="equipPokemon" style="display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center;">
-              <img src="../../img/plus.png" id="pokemon1" alt="" style="width: 100px; height: 100px; align-self: center;">
-            </span>
-            <label for="pokemon" style="display: none;">Nom del Pokemon</label>
-            <input type="text" name="pokemon" placeholder="Pokemon">
-          </div>
-        </form>
-      </div>
-    </section> -->
+    <section class="pokemonsSel">
+        <div class="equipo" style="display:flex; justify-content: center; align-items:center;">
+          <div class="slot" id="afegir_poke">
+              <button id="botoAfegir" style="display:flex; justify-content: center; align-items:center;">
+                <img src="../../img/plus.png" alt="+" style="width: 100px; height: 100px; align-self: center; cursor: pointer;">
+              </button>
+          </div> 
+          <div class="slot" id="slot01"></div>
+          <div class="slot" id="slot02"></div>
+          <div class="slot" id="slot03"></div>
+          <div class="slot" id="slot04"></div>
+          <div class="slot" id="slot05"></div>
+          <div class="slot" id="slot06"></div>
+        </div>
+    </section>
+
     <section class="pokemonsSel">
       <div class="seleccioPokemon" style="display: flex; flex-direction: row; gap: 10px;" id="pokemonTeam">
 
@@ -93,48 +96,85 @@ session_start();
       <!-- IMG POKEMON -->
       <div class="fons1">
         <div class="fons2 centSelPkmn">
-          <img src="https://img.pokemondb.net/sprites/black-white/normal/gengar.png" id="pokemonSel" class="pokemonSel" alt="">
+          <img src="../../img/shilluette.png" id="imgPokemon" class="pokemonSel" alt="">
+          <!-- Modal Bootstrap -->
+          <div class="modal fade" id="pokemonModal" tabindex="-1" aria-labelledby="pokemonModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="pokemonModalLabel">Detalls del Pokémon</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tancar"></button>
+              </div>
+              <div class="modal-body">
+                <img id="modalImgPokemon" src="" alt="Pokémon" class="img-fluid mb-3" />
+                <label for="selectPokemon">Selecciona un Pokémon:</label>
+                <select id="selectPokemon" class="form-select mb-3">
+                  <!-- Aquí es carregaran les opcions -->
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button id="confirmarPokemon" type="button" class="btn btn-primary">Confirmar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tancar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
       <!-- STATS -->
       <div class="fons1">
         <div class="fons2Stats centStatsPkmn">
           <table>
+            <thead>
+              <tr style="font-weight: bold;">
+                <td style="text-align: end;">Estadistica</td>
+                <td>Base</td>
+                <td></td>
+                <td>Modificada</td>
+              </tr>
+            </thead>
             <tbody>
               <tr>
                 <td class="nomStat">PS: </td>
-                <td>60</td>
+                <td id="statBasePS">-</td>
                 <td><div id="barraBasePS"><div id="barraStatPS"></div></div></td>
+                <td id="numStatPS">-</td>
               </tr>
               <tr>
                 <td class="nomStat">Atac: </td>
-                <td>55</td>
+                <td id="statBaseAt">-</td>
                 <td><div id="barraBaseAtac"><div id="barraStatAtac"></div></div></td>
+                <td id="numStatAt">-</td>
               </tr>
               <tr>
                 <td class="nomStat">Defensa: </td>
-                <td>25</td>
+                <td id="statBaseDe">-</td>
                 <td><div id="barraBaseDefensa"><div id="barraStatDefensa"></div></div></td>
+                <td id="numStatDe">-</td>
               </tr>
               <tr>
                 <td class="nomStat">At.Especial: </td>
-                <td>155</td>
+                <td id="statBaseAtEs">-</td>
                 <td><div id="barraBaseAtEspecial"><div id="barraStatAtEspecial"></div></div></td>
+                <td id="numStatAtEs">-</td>
               </tr>
               <tr>
                 <td class="nomStat">Def.Especial: </td>
-                <td>45</td>
+                <td id="statBaseDeEs">-</td>
                 <td><div id="barraBaseDefEspecial"><div id="barraStatDefEspecial"></div></div></td>
+                <td id="numStatDeEs">-</td>
               </tr>
               <tr>
                 <td class="nomStat">Velocitat: </td>
-                <td>115</td>
+                <td id="statBaseVel">-</td>
                 <td><div id="barraBaseVelocitat"><div id="barraStatVelocitat"></div></div></td>
+                <td id="numStatVel">-</td>
               </tr>
               <tr>
-                <td class="nomStat">Total: </td>
-                <td>445</td>
+                <td class="nomStat">Suma: </td>
+                <td id="statBaseTotal">-</td>
                 <td></td>
+                <td id="numStatTotal"></td>
               </tr>
             </tbody>
           </table>
@@ -154,33 +194,34 @@ session_start();
           <tbody>
             <tr>
               <td class="nomStat">PS: </td>
-              <td><input type="number" id="IvPS" class="IvPS" max="31"></td>
-              <td><input type="number" id="EvPS" class="EvPS" max="252"></td>
+              <td><input type="number" id="IvPS" class="IvPS" max="31" min="0" value="0"></td>
+              <td><input type="number" id="EvPS" class="EvPS" max="252" min="0" value="0"></td>
             </tr>
             <tr>
               <td class="nomStat">Atac: </td>
-              <td><input type="number" id="IvAtac" class="IvAtac" max="31"></td>
-              <td><input type="number" id="EvAtac" class="EvAtac" max="252"></td>
+              <td><input type="number" id="IvAt" class="IvAtac" max="31" min="0" value="0"></td>
+              <td><input type="number" id="EvAt" class="EvAtac" max="252" min="0" value="0"></td>
             </tr>
             <tr>
               <td class="nomStat">Defensa: </td>
-              <td><input type="number" id="IvDefensa" class="IvDefensa" max="31"></td>
-              <td><input type="number" id="EvDefensa" class="EvDefensa" max="252"></td>
+              <td><input type="number" id="IvDe" class="IvDefensa" max="31" min="0" value="0"></td>
+              <td><input type="number" id="EvDe" class="EvDefensa" max="252" min="0" value="0"></td>
             </tr>
             <tr>
               <td class="nomStat">At.Especial: </td>
-              <td><input type="number" id="IvAtEspecial" class="IvAtEspecial" max="31"></td>
-              <td><input type="number" id="EvAtEspecial" class="EvAtEspecial" max="252"></td>
+              <td><input type="number" id="IvAtEs" class="IvAtEspecial" max="31" min="0" value="0"></td>
+              <td><input type="number" id="EvAtEs" class="EvAtEspecial" max="252" min="0" value="0"></td>
             </tr>
+            
             <tr>
               <td class="nomStat">Def.Especial: </td>
-              <td><input type="number" id="IvDefEspecial" class="IvDefEspecial" max="31"></td>
-              <td><input type="number" id="EvDefEspecial" class="EvDefEspecial" max="252"></td>
+              <td><input type="number" id="IvDeEs" class="IvDefEspecial" max="31" min="0" value="0"></td>
+              <td><input type="number" id="EvDeEs" class="EvDefEspecial" max="252" min="0" value="0"></td>
             </tr>
             <tr>
               <td class="nomStat">Velocitat: </td>
-              <td><input type="number" id="IvVelocitat" class="IvVelocitat" max="31"></td>
-              <td><input type="number" id="EvVelocitat" class="EvVelocitat" max="252"></td>
+              <td><input type="number" id="IvVel" class="IvVelocitat" max="31" min="0" value="0"></td>
+              <td><input type="number" id="EvVel" class="EvVelocitat" max="252" min="0" value="0"></td>
             </tr>
           </tbody>
         </table>
@@ -188,24 +229,29 @@ session_start();
       <!-- MOVIMENTS  -->
       <div class="fons1">
         <div class="genere">
-          <div class="gen_shsiny" style="display: flex; flex-direction: row; gap: 60px;">
+          <div class="gen_shsiny" style="display: flex; flex-direction: row; justify-content:space-between;">
             <h2>Genere</h2>
+            <h2>Nivell</h2>
           </div>
           <div class="centreGenere">
             <div class="ordenarGenereShiny">
               <div class="genereHome">
-                <input type="radio" name="homeDona" class="signeHome" id="signeHome" value="home">
-                <label for="home"><i class='bx bx-md bx-male-sign'></i></label>
+                <input type="radio" name="genere" class="signeHome" id="signeHome" value="home" checked>
+                <label for="signeHome"><i class='bx bx-md bx-male-sign'></i></label>
               </div>
               <div class="genereDona">
-                <input type="radio" name="homeDona" class="signeDona" id="signeDona" value="dona">
-                <label for="dona"><i class='bx bx-md bx-female-sign'></i></label>
+                <input type="radio" name="genere" class="signeDona" id="signeDona" value="dona">
+                <label for="signeDona"><i class='bx bx-md bx-female-sign'></i></label>
+              </div>
+              <div class="esShiny">
+                <input type="checkbox" name="es_shiny" class="shinyy" id="shiny" value="shiny">
+                <label for="shiny"><img src="../../img/shiny.png" alt="shiny" style="width:40px;"></label>
               </div>
             </div>
             <div class="Shiny" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-end;">
-              <div class="esShiny">
-                <input type="checkbox" name="es_shiny" class="shinyy" id="shiny" value="shiny">
-                <label for="home">Shiny</label>
+              <div class="esNivell">
+                <label for="nivell"></label>
+                <input type="number" name="nivell" id="nivell" min="1" max="100" value="50">  
               </div>
             </div>
           </div>

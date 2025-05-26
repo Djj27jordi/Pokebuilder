@@ -1,4 +1,9 @@
 <?php
+    // $servername = "sql303.infinityfree.com";
+    // $username = "if0_38932247";
+    // $password = "ibFOWU5LadFE";
+    // $dbname = "if0_38922247_pokebuilder";
+
     $servername = "localhost";
     $username = "root";
     $password = "";

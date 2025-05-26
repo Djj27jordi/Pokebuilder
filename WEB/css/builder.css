@@ -276,3 +276,32 @@ input, select {
   max-width: 1400px;
   width: 100%;
 }
+
+.esShiny{
+  display: flex;
+}
+
+.esNivell input{
+  height: 25px;
+    width: 110px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#botoAfegir{
+  width: 100px; 
+  height: 100px; 
+  align-self: center; 
+  cursor: pointer;
+}
+
+.gen_shsiny{
+  display: flex; 
+  flex-direction: row; 
+  justify-content:space-between;
+}
+
+.shiny{
+  width:40px;
+}
